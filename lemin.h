@@ -14,6 +14,7 @@ typedef struct 			s_lemin
 	int is_end;
 	char **names; // названия вершин. по names можно однозначно присвоить индекс названию вершины
 	int **adj_matrix; // матрица смежностей. индексы [i][j] соответствуют индексам из names
+	int n; // размерность матрицы
 }						t_lemin;
 
 #endif

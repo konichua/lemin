@@ -41,6 +41,20 @@ void	add_name(t_lemin **lemin, char *str)
 	(*lemin)->names = new_arr;
 }
 
+int find_index(char **names, char *str)
+{
+    int i;
+
+    i = 0;
+    while (names[i])
+    {
+        if (ft_strcmp(names[i], str) == 0)
+            return i;
+        i++;
+    }
+    return -1;
+}
+
 void	parse_map(t_lemin **lemin) {
 	char *line; // for gnl
 	char **arr; // для разбивания строки по пробелам
@@ -66,28 +80,35 @@ void	parse_map(t_lemin **lemin) {
 				else if (ft_strcmp(arr[0], "##end") == 0)
 					(*lemin)->is_end = 1;
 			}
-			// в другом случае это количество муравьев
-			else if (ft_isdigit((int)arr[0][0]))
-			{
-				//ft_printf("its digit");
-				(*lemin)->ants = ft_atoi(arr[0]);
-			}
-			// ну или это связь с дефисом
+			// в другом случае это связь с дефисом
 			else if (len_arr(links = ft_strsplit(arr[0], '-')) == 2) // links[0], links[1]
 			{
-				if ((*lemin)->adj_matrix == NULL) // выделяем память, потому что комнаты закончились. дальше будут только связи
+			    ft_printf("links[0]: %s links[1]: %s\n", links[0], links[1]);
+				if ((*lemin)->adj_matrix == NULL) // выделяем память, потому что комнаты закончились. дальше будут только связи. cюда зайдет только один раз
 				{
-					len = len_arr((*lemin)->names); // размерность матрицы = количеству вершин
-					(*lemin)->adj_matrix = (int **)malloc(sizeof(int *) * len);
-					while (i < len)
+					(*lemin)->n = len_arr((*lemin)->names); // размерность матрицы = количеству вершин
+					(*lemin)->adj_matrix = (int **)malloc(sizeof(int *) * (*lemin)->n);
+					while (i < (*lemin)->n)
 					{
-						(*lemin)->adj_matrix[i] = (int *)malloc(sizeof(int) * len);
+						(*lemin)->adj_matrix[i] = (int *)malloc(sizeof(int) * (*lemin)->n);
 						i++;
 					}
 				}
 				// ================= ?????? ============
 				// записываем связи в adj_matrix
+			    int index1 = find_index((*lemin)->names, links[0]); // находим индекс первой и второй комнаты
+                int index2 = find_index((*lemin)->names, links[1]);
+                if (index1 == -1 || index2 == -1)
+                    ft_printf("Error"); // exit()
+                (*lemin)->adj_matrix[index1][index2] = 1;
+                (*lemin)->adj_matrix[index2][index1] = 1;
 			}
+			// ну или это количество муравьев
+            else if (ft_isdigit((int)arr[0][0]))
+            {
+                //ft_printf("its digit");
+                (*lemin)->ants = ft_atoi(arr[0]);
+            }
 		}
 		else if (len_arr(arr) == 3)
 		{
@@ -116,12 +137,28 @@ int main()
 	lemin = (t_lemin *)malloc(sizeof(t_lemin));
 	parse_map(&lemin);
 
-	ft_printf("output:\n");
+	ft_printf("vertices:\n");
 	int i = 0;
 	while (lemin->names[i])
 	{
-		ft_printf(lemin->names[i]);
+	    ft_printf("%d ", i);
+		ft_printf("'%s'", lemin->names[i]);
+		ft_printf("\n");
 		i++;
 	}
+	i = 0;
+	int j = 0;
+    ft_printf("matrix:\n");
+	while (i < lemin->n)
+    {
+	    j = 0;
+	    while (j < lemin->n)
+        {
+	        ft_printf("%d ", lemin->adj_matrix[i][j]);
+	        j++;
+        }
+        ft_printf("\n");
+	    i++;
+    }
 	return 0;
 }
