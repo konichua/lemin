@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Professional/CLionProjects/lemin_konichua/includes/ft_printf.h
+stdarg.h
+-
+stdlib.h
+-
+unistd.h
+-
+../libft/libft.h
+C:/Users/Professional/CLionProjects/lemin_konichua/libft/libft.h
+
+C:/Users/Professional/CLionProjects/lemin_konichua/lemin.h
+
+C:/Users/Professional/CLionProjects/lemin_konichua/libft/libft.h
+string.h
+-
+unistd.h
+-
+stdlib.h
+-
+fcntl.h
+C:/Users/Professional/CLionProjects/lemin_konichua/libft/fcntl.h
+sys/types.h
+C:/Users/Professional/CLionProjects/lemin_konichua/libft/sys/types.h
+
+C:/Users/Professional/CLionProjects/lemin_konichua/main.c
+libft/libft.h
+C:/Users/Professional/CLionProjects/lemin_konichua/libft/libft.h
+includes/ft_printf.h
+C:/Users/Professional/CLionProjects/lemin_konichua/includes/ft_printf.h
+lemin.h
+C:/Users/Professional/CLionProjects/lemin_konichua/lemin.h
+

@@ -8,362 +8,358 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/agloin/school21/kate/lem_in_parcing/cmake-build-debug"/>
+				<Option working_dir="C:/Users/Professional/CLionProjects/lemin_konichua/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/agloin/school21/kate/lem_in_parcing/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/agloin/school21/kate/lem_in_parcing/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/agloin/school21/kate/lem_in_parcing/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/agloin/school21/kate/lem_in_parcing/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="rebuild_cache">
-				<Option working_dir="/home/agloin/school21/kate/lem_in_parcing/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/agloin/school21/kate/lem_in_parcing/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/agloin/school21/kate/lem_in_parcing/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/agloin/school21/kate/lem_in_parcing/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/agloin/school21/kate/lem_in_parcing/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Professional/CLionProjects/lemin_konichua/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Professional/CLionProjects/lemin_konichua/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Professional/CLionProjects/lemin_konichua/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Professional/CLionProjects/lemin_konichua/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="my_prinf">
-				<Option output="/home/agloin/school21/kate/lem_in_parcing/cmake-build-debug/my_prinf" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/agloin/school21/kate/lem_in_parcing/cmake-build-debug"/>
+				<Option output="C:/Users/Professional/CLionProjects/lemin_konichua/cmake-build-debug/my_prinf.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Professional/CLionProjects/lemin_konichua/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/agloin/school21/kate/lem_in_parcing/."/>
-					<Add directory="/home/agloin/school21/kate/lem_in_parcing/includes"/>
-					<Add directory="/home/agloin/school21/kate/lem_in_parcing/libft"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
+					<Add directory="C:/Users/Professional/CLionProjects/lemin_konichua/."/>
+					<Add directory="C:/Users/Professional/CLionProjects/lemin_konichua/includes"/>
+					<Add directory="C:/Users/Professional/CLionProjects/lemin_konichua/libft"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/agloin/school21/kate/lem_in_parcing/cmake-build-debug/Makefile&quot;  VERBOSE=1 my_prinf"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/agloin/school21/kate/lem_in_parcing/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/agloin/school21/kate/lem_in_parcing/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/agloin/school21/kate/lem_in_parcing/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Professional/CLionProjects/lemin_konichua/cmake-build-debug/Makefile&quot;  VERBOSE=1 my_prinf"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Professional/CLionProjects/lemin_konichua/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Professional/CLionProjects/lemin_konichua/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Professional/CLionProjects/lemin_konichua/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="my_prinf/fast">
-				<Option output="/home/agloin/school21/kate/lem_in_parcing/cmake-build-debug/my_prinf" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/agloin/school21/kate/lem_in_parcing/cmake-build-debug"/>
+				<Option output="C:/Users/Professional/CLionProjects/lemin_konichua/cmake-build-debug/my_prinf.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Professional/CLionProjects/lemin_konichua/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/agloin/school21/kate/lem_in_parcing/."/>
-					<Add directory="/home/agloin/school21/kate/lem_in_parcing/includes"/>
-					<Add directory="/home/agloin/school21/kate/lem_in_parcing/libft"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
+					<Add directory="C:/Users/Professional/CLionProjects/lemin_konichua/."/>
+					<Add directory="C:/Users/Professional/CLionProjects/lemin_konichua/includes"/>
+					<Add directory="C:/Users/Professional/CLionProjects/lemin_konichua/libft"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/agloin/school21/kate/lem_in_parcing/cmake-build-debug/Makefile&quot;  VERBOSE=1 my_prinf/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/agloin/school21/kate/lem_in_parcing/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/agloin/school21/kate/lem_in_parcing/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/agloin/school21/kate/lem_in_parcing/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Professional/CLionProjects/lemin_konichua/cmake-build-debug/Makefile&quot;  VERBOSE=1 my_prinf/fast"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Professional/CLionProjects/lemin_konichua/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Professional/CLionProjects/lemin_konichua/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Professional/CLionProjects/lemin_konichua/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/agloin/school21/kate/lem_in_parcing/cmake-build-debug"/>
+				<Option working_dir="C:/Users/Professional/CLionProjects/lemin_konichua/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/agloin/school21/kate/lem_in_parcing/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/agloin/school21/kate/lem_in_parcing/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/agloin/school21/kate/lem_in_parcing/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/agloin/school21/kate/lem_in_parcing/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Professional/CLionProjects/lemin_konichua/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Professional/CLionProjects/lemin_konichua/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Professional/CLionProjects/lemin_konichua/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Professional/CLionProjects/lemin_konichua/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/Professional/CLionProjects/lemin_konichua/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Professional/CLionProjects/lemin_konichua/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Professional/CLionProjects/lemin_konichua/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Professional/CLionProjects/lemin_konichua/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Professional/CLionProjects/lemin_konichua/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/agloin/school21/kate/lem_in_parcing/includes/ft_printf.h">
+		<Unit filename="C:/Users/Professional/CLionProjects/lemin_konichua/includes/ft_printf.h">
 			<Option target="my_prinf"/>
 		</Unit>
-		<Unit filename="/home/agloin/school21/kate/lem_in_parcing/lemin.h">
+		<Unit filename="C:/Users/Professional/CLionProjects/lemin_konichua/lemin.h">
 			<Option target="my_prinf"/>
 		</Unit>
-		<Unit filename="/home/agloin/school21/kate/lem_in_parcing/libft/ft_atoi.c">
+		<Unit filename="C:/Users/Professional/CLionProjects/lemin_konichua/libft/ft_atoi.c">
 			<Option target="my_prinf"/>
 		</Unit>
-		<Unit filename="/home/agloin/school21/kate/lem_in_parcing/libft/ft_bzero.c">
+		<Unit filename="C:/Users/Professional/CLionProjects/lemin_konichua/libft/ft_bzero.c">
 			<Option target="my_prinf"/>
 		</Unit>
-		<Unit filename="/home/agloin/school21/kate/lem_in_parcing/libft/ft_countletters.c">
+		<Unit filename="C:/Users/Professional/CLionProjects/lemin_konichua/libft/ft_countletters.c">
 			<Option target="my_prinf"/>
 		</Unit>
-		<Unit filename="/home/agloin/school21/kate/lem_in_parcing/libft/ft_countwds.c">
+		<Unit filename="C:/Users/Professional/CLionProjects/lemin_konichua/libft/ft_countwds.c">
 			<Option target="my_prinf"/>
 		</Unit>
-		<Unit filename="/home/agloin/school21/kate/lem_in_parcing/libft/ft_isalnum.c">
+		<Unit filename="C:/Users/Professional/CLionProjects/lemin_konichua/libft/ft_isalnum.c">
 			<Option target="my_prinf"/>
 		</Unit>
-		<Unit filename="/home/agloin/school21/kate/lem_in_parcing/libft/ft_isalpha.c">
+		<Unit filename="C:/Users/Professional/CLionProjects/lemin_konichua/libft/ft_isalpha.c">
 			<Option target="my_prinf"/>
 		</Unit>
-		<Unit filename="/home/agloin/school21/kate/lem_in_parcing/libft/ft_isascii.c">
+		<Unit filename="C:/Users/Professional/CLionProjects/lemin_konichua/libft/ft_isascii.c">
 			<Option target="my_prinf"/>
 		</Unit>
-		<Unit filename="/home/agloin/school21/kate/lem_in_parcing/libft/ft_isdigit.c">
+		<Unit filename="C:/Users/Professional/CLionProjects/lemin_konichua/libft/ft_isdigit.c">
 			<Option target="my_prinf"/>
 		</Unit>
-		<Unit filename="/home/agloin/school21/kate/lem_in_parcing/libft/ft_isprint.c">
+		<Unit filename="C:/Users/Professional/CLionProjects/lemin_konichua/libft/ft_isprint.c">
 			<Option target="my_prinf"/>
 		</Unit>
-		<Unit filename="/home/agloin/school21/kate/lem_in_parcing/libft/ft_itoa.c">
+		<Unit filename="C:/Users/Professional/CLionProjects/lemin_konichua/libft/ft_itoa.c">
 			<Option target="my_prinf"/>
 		</Unit>
-		<Unit filename="/home/agloin/school21/kate/lem_in_parcing/libft/ft_lstadd.c">
+		<Unit filename="C:/Users/Professional/CLionProjects/lemin_konichua/libft/ft_lstadd.c">
 			<Option target="my_prinf"/>
 		</Unit>
-		<Unit filename="/home/agloin/school21/kate/lem_in_parcing/libft/ft_lstdel.c">
+		<Unit filename="C:/Users/Professional/CLionProjects/lemin_konichua/libft/ft_lstdel.c">
 			<Option target="my_prinf"/>
 		</Unit>
-		<Unit filename="/home/agloin/school21/kate/lem_in_parcing/libft/ft_lstdelone.c">
+		<Unit filename="C:/Users/Professional/CLionProjects/lemin_konichua/libft/ft_lstdelone.c">
 			<Option target="my_prinf"/>
 		</Unit>
-		<Unit filename="/home/agloin/school21/kate/lem_in_parcing/libft/ft_lstiter.c">
+		<Unit filename="C:/Users/Professional/CLionProjects/lemin_konichua/libft/ft_lstiter.c">
 			<Option target="my_prinf"/>
 		</Unit>
-		<Unit filename="/home/agloin/school21/kate/lem_in_parcing/libft/ft_lstmap.c">
+		<Unit filename="C:/Users/Professional/CLionProjects/lemin_konichua/libft/ft_lstmap.c">
 			<Option target="my_prinf"/>
 		</Unit>
-		<Unit filename="/home/agloin/school21/kate/lem_in_parcing/libft/ft_lstnew.c">
+		<Unit filename="C:/Users/Professional/CLionProjects/lemin_konichua/libft/ft_lstnew.c">
 			<Option target="my_prinf"/>
 		</Unit>
-		<Unit filename="/home/agloin/school21/kate/lem_in_parcing/libft/ft_memalloc.c">
+		<Unit filename="C:/Users/Professional/CLionProjects/lemin_konichua/libft/ft_memalloc.c">
 			<Option target="my_prinf"/>
 		</Unit>
-		<Unit filename="/home/agloin/school21/kate/lem_in_parcing/libft/ft_memccpy.c">
+		<Unit filename="C:/Users/Professional/CLionProjects/lemin_konichua/libft/ft_memccpy.c">
 			<Option target="my_prinf"/>
 		</Unit>
-		<Unit filename="/home/agloin/school21/kate/lem_in_parcing/libft/ft_memchr.c">
+		<Unit filename="C:/Users/Professional/CLionProjects/lemin_konichua/libft/ft_memchr.c">
 			<Option target="my_prinf"/>
 		</Unit>
-		<Unit filename="/home/agloin/school21/kate/lem_in_parcing/libft/ft_memcmp.c">
+		<Unit filename="C:/Users/Professional/CLionProjects/lemin_konichua/libft/ft_memcmp.c">
 			<Option target="my_prinf"/>
 		</Unit>
-		<Unit filename="/home/agloin/school21/kate/lem_in_parcing/libft/ft_memcpy.c">
+		<Unit filename="C:/Users/Professional/CLionProjects/lemin_konichua/libft/ft_memcpy.c">
 			<Option target="my_prinf"/>
 		</Unit>
-		<Unit filename="/home/agloin/school21/kate/lem_in_parcing/libft/ft_memdel.c">
+		<Unit filename="C:/Users/Professional/CLionProjects/lemin_konichua/libft/ft_memdel.c">
 			<Option target="my_prinf"/>
 		</Unit>
-		<Unit filename="/home/agloin/school21/kate/lem_in_parcing/libft/ft_memmove.c">
+		<Unit filename="C:/Users/Professional/CLionProjects/lemin_konichua/libft/ft_memmove.c">
 			<Option target="my_prinf"/>
 		</Unit>
-		<Unit filename="/home/agloin/school21/kate/lem_in_parcing/libft/ft_memset.c">
+		<Unit filename="C:/Users/Professional/CLionProjects/lemin_konichua/libft/ft_memset.c">
 			<Option target="my_prinf"/>
 		</Unit>
-		<Unit filename="/home/agloin/school21/kate/lem_in_parcing/libft/ft_putchar.c">
+		<Unit filename="C:/Users/Professional/CLionProjects/lemin_konichua/libft/ft_putchar.c">
 			<Option target="my_prinf"/>
 		</Unit>
-		<Unit filename="/home/agloin/school21/kate/lem_in_parcing/libft/ft_putchar_fd.c">
+		<Unit filename="C:/Users/Professional/CLionProjects/lemin_konichua/libft/ft_putchar_fd.c">
 			<Option target="my_prinf"/>
 		</Unit>
-		<Unit filename="/home/agloin/school21/kate/lem_in_parcing/libft/ft_putendl.c">
+		<Unit filename="C:/Users/Professional/CLionProjects/lemin_konichua/libft/ft_putendl.c">
 			<Option target="my_prinf"/>
 		</Unit>
-		<Unit filename="/home/agloin/school21/kate/lem_in_parcing/libft/ft_putendl_fd.c">
+		<Unit filename="C:/Users/Professional/CLionProjects/lemin_konichua/libft/ft_putendl_fd.c">
 			<Option target="my_prinf"/>
 		</Unit>
-		<Unit filename="/home/agloin/school21/kate/lem_in_parcing/libft/ft_putnbr.c">
+		<Unit filename="C:/Users/Professional/CLionProjects/lemin_konichua/libft/ft_putnbr.c">
 			<Option target="my_prinf"/>
 		</Unit>
-		<Unit filename="/home/agloin/school21/kate/lem_in_parcing/libft/ft_putnbr_fd.c">
+		<Unit filename="C:/Users/Professional/CLionProjects/lemin_konichua/libft/ft_putnbr_fd.c">
 			<Option target="my_prinf"/>
 		</Unit>
-		<Unit filename="/home/agloin/school21/kate/lem_in_parcing/libft/ft_putstr.c">
+		<Unit filename="C:/Users/Professional/CLionProjects/lemin_konichua/libft/ft_putstr.c">
 			<Option target="my_prinf"/>
 		</Unit>
-		<Unit filename="/home/agloin/school21/kate/lem_in_parcing/libft/ft_putstr_fd.c">
+		<Unit filename="C:/Users/Professional/CLionProjects/lemin_konichua/libft/ft_putstr_fd.c">
 			<Option target="my_prinf"/>
 		</Unit>
-		<Unit filename="/home/agloin/school21/kate/lem_in_parcing/libft/ft_strcat.c">
+		<Unit filename="C:/Users/Professional/CLionProjects/lemin_konichua/libft/ft_strcat.c">
 			<Option target="my_prinf"/>
 		</Unit>
-		<Unit filename="/home/agloin/school21/kate/lem_in_parcing/libft/ft_strchr.c">
+		<Unit filename="C:/Users/Professional/CLionProjects/lemin_konichua/libft/ft_strchr.c">
 			<Option target="my_prinf"/>
 		</Unit>
-		<Unit filename="/home/agloin/school21/kate/lem_in_parcing/libft/ft_strclr.c">
+		<Unit filename="C:/Users/Professional/CLionProjects/lemin_konichua/libft/ft_strclr.c">
 			<Option target="my_prinf"/>
 		</Unit>
-		<Unit filename="/home/agloin/school21/kate/lem_in_parcing/libft/ft_strcmp.c">
+		<Unit filename="C:/Users/Professional/CLionProjects/lemin_konichua/libft/ft_strcmp.c">
 			<Option target="my_prinf"/>
 		</Unit>
-		<Unit filename="/home/agloin/school21/kate/lem_in_parcing/libft/ft_strcpy.c">
+		<Unit filename="C:/Users/Professional/CLionProjects/lemin_konichua/libft/ft_strcpy.c">
 			<Option target="my_prinf"/>
 		</Unit>
-		<Unit filename="/home/agloin/school21/kate/lem_in_parcing/libft/ft_strdel.c">
+		<Unit filename="C:/Users/Professional/CLionProjects/lemin_konichua/libft/ft_strdel.c">
 			<Option target="my_prinf"/>
 		</Unit>
-		<Unit filename="/home/agloin/school21/kate/lem_in_parcing/libft/ft_strdup.c">
+		<Unit filename="C:/Users/Professional/CLionProjects/lemin_konichua/libft/ft_strdup.c">
 			<Option target="my_prinf"/>
 		</Unit>
-		<Unit filename="/home/agloin/school21/kate/lem_in_parcing/libft/ft_strequ.c">
+		<Unit filename="C:/Users/Professional/CLionProjects/lemin_konichua/libft/ft_strequ.c">
 			<Option target="my_prinf"/>
 		</Unit>
-		<Unit filename="/home/agloin/school21/kate/lem_in_parcing/libft/ft_striter.c">
+		<Unit filename="C:/Users/Professional/CLionProjects/lemin_konichua/libft/ft_striter.c">
 			<Option target="my_prinf"/>
 		</Unit>
-		<Unit filename="/home/agloin/school21/kate/lem_in_parcing/libft/ft_striteri.c">
+		<Unit filename="C:/Users/Professional/CLionProjects/lemin_konichua/libft/ft_striteri.c">
 			<Option target="my_prinf"/>
 		</Unit>
-		<Unit filename="/home/agloin/school21/kate/lem_in_parcing/libft/ft_strjoin.c">
+		<Unit filename="C:/Users/Professional/CLionProjects/lemin_konichua/libft/ft_strjoin.c">
 			<Option target="my_prinf"/>
 		</Unit>
-		<Unit filename="/home/agloin/school21/kate/lem_in_parcing/libft/ft_strlcat.c">
+		<Unit filename="C:/Users/Professional/CLionProjects/lemin_konichua/libft/ft_strlcat.c">
 			<Option target="my_prinf"/>
 		</Unit>
-		<Unit filename="/home/agloin/school21/kate/lem_in_parcing/libft/ft_strlen.c">
+		<Unit filename="C:/Users/Professional/CLionProjects/lemin_konichua/libft/ft_strlen.c">
 			<Option target="my_prinf"/>
 		</Unit>
-		<Unit filename="/home/agloin/school21/kate/lem_in_parcing/libft/ft_strmap.c">
+		<Unit filename="C:/Users/Professional/CLionProjects/lemin_konichua/libft/ft_strmap.c">
 			<Option target="my_prinf"/>
 		</Unit>
-		<Unit filename="/home/agloin/school21/kate/lem_in_parcing/libft/ft_strmapi.c">
+		<Unit filename="C:/Users/Professional/CLionProjects/lemin_konichua/libft/ft_strmapi.c">
 			<Option target="my_prinf"/>
 		</Unit>
-		<Unit filename="/home/agloin/school21/kate/lem_in_parcing/libft/ft_strncat.c">
+		<Unit filename="C:/Users/Professional/CLionProjects/lemin_konichua/libft/ft_strncat.c">
 			<Option target="my_prinf"/>
 		</Unit>
-		<Unit filename="/home/agloin/school21/kate/lem_in_parcing/libft/ft_strncmp.c">
+		<Unit filename="C:/Users/Professional/CLionProjects/lemin_konichua/libft/ft_strncmp.c">
 			<Option target="my_prinf"/>
 		</Unit>
-		<Unit filename="/home/agloin/school21/kate/lem_in_parcing/libft/ft_strncpy.c">
+		<Unit filename="C:/Users/Professional/CLionProjects/lemin_konichua/libft/ft_strncpy.c">
 			<Option target="my_prinf"/>
 		</Unit>
-		<Unit filename="/home/agloin/school21/kate/lem_in_parcing/libft/ft_strnequ.c">
+		<Unit filename="C:/Users/Professional/CLionProjects/lemin_konichua/libft/ft_strnequ.c">
 			<Option target="my_prinf"/>
 		</Unit>
-		<Unit filename="/home/agloin/school21/kate/lem_in_parcing/libft/ft_strnew.c">
+		<Unit filename="C:/Users/Professional/CLionProjects/lemin_konichua/libft/ft_strnew.c">
 			<Option target="my_prinf"/>
 		</Unit>
-		<Unit filename="/home/agloin/school21/kate/lem_in_parcing/libft/ft_strnstr.c">
+		<Unit filename="C:/Users/Professional/CLionProjects/lemin_konichua/libft/ft_strnstr.c">
 			<Option target="my_prinf"/>
 		</Unit>
-		<Unit filename="/home/agloin/school21/kate/lem_in_parcing/libft/ft_strrchr.c">
+		<Unit filename="C:/Users/Professional/CLionProjects/lemin_konichua/libft/ft_strrchr.c">
 			<Option target="my_prinf"/>
 		</Unit>
-		<Unit filename="/home/agloin/school21/kate/lem_in_parcing/libft/ft_strsplit.c">
+		<Unit filename="C:/Users/Professional/CLionProjects/lemin_konichua/libft/ft_strsplit.c">
 			<Option target="my_prinf"/>
 		</Unit>
-		<Unit filename="/home/agloin/school21/kate/lem_in_parcing/libft/ft_strstr.c">
+		<Unit filename="C:/Users/Professional/CLionProjects/lemin_konichua/libft/ft_strstr.c">
 			<Option target="my_prinf"/>
 		</Unit>
-		<Unit filename="/home/agloin/school21/kate/lem_in_parcing/libft/ft_strsub.c">
+		<Unit filename="C:/Users/Professional/CLionProjects/lemin_konichua/libft/ft_strsub.c">
 			<Option target="my_prinf"/>
 		</Unit>
-		<Unit filename="/home/agloin/school21/kate/lem_in_parcing/libft/ft_strtrim.c">
+		<Unit filename="C:/Users/Professional/CLionProjects/lemin_konichua/libft/ft_strtrim.c">
 			<Option target="my_prinf"/>
 		</Unit>
-		<Unit filename="/home/agloin/school21/kate/lem_in_parcing/libft/ft_tolower.c">
+		<Unit filename="C:/Users/Professional/CLionProjects/lemin_konichua/libft/ft_tolower.c">
 			<Option target="my_prinf"/>
 		</Unit>
-		<Unit filename="/home/agloin/school21/kate/lem_in_parcing/libft/ft_toupper.c">
+		<Unit filename="C:/Users/Professional/CLionProjects/lemin_konichua/libft/ft_toupper.c">
 			<Option target="my_prinf"/>
 		</Unit>
-		<Unit filename="/home/agloin/school21/kate/lem_in_parcing/libft/gnl.c">
+		<Unit filename="C:/Users/Professional/CLionProjects/lemin_konichua/libft/gnl.c">
 			<Option target="my_prinf"/>
 		</Unit>
-		<Unit filename="/home/agloin/school21/kate/lem_in_parcing/libft/libft.h">
+		<Unit filename="C:/Users/Professional/CLionProjects/lemin_konichua/libft/libft.h">
 			<Option target="my_prinf"/>
 		</Unit>
-		<Unit filename="/home/agloin/school21/kate/lem_in_parcing/main.c">
+		<Unit filename="C:/Users/Professional/CLionProjects/lemin_konichua/main.c">
 			<Option target="my_prinf"/>
 		</Unit>
-		<Unit filename="/home/agloin/school21/kate/lem_in_parcing/src/binary.c">
+		<Unit filename="C:/Users/Professional/CLionProjects/lemin_konichua/src/binary.c">
 			<Option target="my_prinf"/>
 		</Unit>
-		<Unit filename="/home/agloin/school21/kate/lem_in_parcing/src/check_format.c">
+		<Unit filename="C:/Users/Professional/CLionProjects/lemin_konichua/src/check_format.c">
 			<Option target="my_prinf"/>
 		</Unit>
-		<Unit filename="/home/agloin/school21/kate/lem_in_parcing/src/common_functions.c">
+		<Unit filename="C:/Users/Professional/CLionProjects/lemin_konichua/src/common_functions.c">
 			<Option target="my_prinf"/>
 		</Unit>
-		<Unit filename="/home/agloin/school21/kate/lem_in_parcing/src/count_length.c">
+		<Unit filename="C:/Users/Professional/CLionProjects/lemin_konichua/src/count_length.c">
 			<Option target="my_prinf"/>
 		</Unit>
-		<Unit filename="/home/agloin/school21/kate/lem_in_parcing/src/format_percent.c">
+		<Unit filename="C:/Users/Professional/CLionProjects/lemin_konichua/src/format_percent.c">
 			<Option target="my_prinf"/>
 		</Unit>
-		<Unit filename="/home/agloin/school21/kate/lem_in_parcing/src/format_print_c.c">
+		<Unit filename="C:/Users/Professional/CLionProjects/lemin_konichua/src/format_print_c.c">
 			<Option target="my_prinf"/>
 		</Unit>
-		<Unit filename="/home/agloin/school21/kate/lem_in_parcing/src/format_print_di.c">
+		<Unit filename="C:/Users/Professional/CLionProjects/lemin_konichua/src/format_print_di.c">
 			<Option target="my_prinf"/>
 		</Unit>
-		<Unit filename="/home/agloin/school21/kate/lem_in_parcing/src/format_print_di_extra.c">
+		<Unit filename="C:/Users/Professional/CLionProjects/lemin_konichua/src/format_print_di_extra.c">
 			<Option target="my_prinf"/>
 		</Unit>
-		<Unit filename="/home/agloin/school21/kate/lem_in_parcing/src/format_print_p.c">
+		<Unit filename="C:/Users/Professional/CLionProjects/lemin_konichua/src/format_print_p.c">
 			<Option target="my_prinf"/>
 		</Unit>
-		<Unit filename="/home/agloin/school21/kate/lem_in_parcing/src/format_print_p_extra.c">
+		<Unit filename="C:/Users/Professional/CLionProjects/lemin_konichua/src/format_print_p_extra.c">
 			<Option target="my_prinf"/>
 		</Unit>
-		<Unit filename="/home/agloin/school21/kate/lem_in_parcing/src/format_print_str.c">
+		<Unit filename="C:/Users/Professional/CLionProjects/lemin_konichua/src/format_print_str.c">
 			<Option target="my_prinf"/>
 		</Unit>
-		<Unit filename="/home/agloin/school21/kate/lem_in_parcing/src/format_print_u.c">
+		<Unit filename="C:/Users/Professional/CLionProjects/lemin_konichua/src/format_print_u.c">
 			<Option target="my_prinf"/>
 		</Unit>
-		<Unit filename="/home/agloin/school21/kate/lem_in_parcing/src/format_print_u_four.c">
+		<Unit filename="C:/Users/Professional/CLionProjects/lemin_konichua/src/format_print_u_four.c">
 			<Option target="my_prinf"/>
 		</Unit>
-		<Unit filename="/home/agloin/school21/kate/lem_in_parcing/src/format_print_u_one.c">
+		<Unit filename="C:/Users/Professional/CLionProjects/lemin_konichua/src/format_print_u_one.c">
 			<Option target="my_prinf"/>
 		</Unit>
-		<Unit filename="/home/agloin/school21/kate/lem_in_parcing/src/format_print_u_three.c">
+		<Unit filename="C:/Users/Professional/CLionProjects/lemin_konichua/src/format_print_u_three.c">
 			<Option target="my_prinf"/>
 		</Unit>
-		<Unit filename="/home/agloin/school21/kate/lem_in_parcing/src/format_print_u_two.c">
+		<Unit filename="C:/Users/Professional/CLionProjects/lemin_konichua/src/format_print_u_two.c">
 			<Option target="my_prinf"/>
 		</Unit>
-		<Unit filename="/home/agloin/school21/kate/lem_in_parcing/src/ft_float.c">
+		<Unit filename="C:/Users/Professional/CLionProjects/lemin_konichua/src/ft_float.c">
 			<Option target="my_prinf"/>
 		</Unit>
-		<Unit filename="/home/agloin/school21/kate/lem_in_parcing/src/ft_float_one.c">
+		<Unit filename="C:/Users/Professional/CLionProjects/lemin_konichua/src/ft_float_one.c">
 			<Option target="my_prinf"/>
 		</Unit>
-		<Unit filename="/home/agloin/school21/kate/lem_in_parcing/src/ft_float_two.c">
+		<Unit filename="C:/Users/Professional/CLionProjects/lemin_konichua/src/ft_float_two.c">
 			<Option target="my_prinf"/>
 		</Unit>
-		<Unit filename="/home/agloin/school21/kate/lem_in_parcing/src/ft_parse.c">
+		<Unit filename="C:/Users/Professional/CLionProjects/lemin_konichua/src/ft_parse.c">
 			<Option target="my_prinf"/>
 		</Unit>
-		<Unit filename="/home/agloin/school21/kate/lem_in_parcing/src/ft_printf.c">
+		<Unit filename="C:/Users/Professional/CLionProjects/lemin_konichua/src/ft_printf.c">
 			<Option target="my_prinf"/>
 		</Unit>
-		<Unit filename="/home/agloin/school21/kate/lem_in_parcing/src/ft_printf_add.c">
+		<Unit filename="C:/Users/Professional/CLionProjects/lemin_konichua/src/ft_printf_add.c">
 			<Option target="my_prinf"/>
 		</Unit>
-		<Unit filename="/home/agloin/school21/kate/lem_in_parcing/src/ft_putchar_fd_my.c">
+		<Unit filename="C:/Users/Professional/CLionProjects/lemin_konichua/src/ft_putchar_fd_my.c">
 			<Option target="my_prinf"/>
 		</Unit>
-		<Unit filename="/home/agloin/school21/kate/lem_in_parcing/src/ft_putnbr_my.c">
+		<Unit filename="C:/Users/Professional/CLionProjects/lemin_konichua/src/ft_putnbr_my.c">
 			<Option target="my_prinf"/>
 		</Unit>
-		<Unit filename="/home/agloin/school21/kate/lem_in_parcing/src/hex_oct.c">
+		<Unit filename="C:/Users/Professional/CLionProjects/lemin_konichua/src/hex_oct.c">
 			<Option target="my_prinf"/>
 		</Unit>
-		<Unit filename="/home/agloin/school21/kate/lem_in_parcing/src/print_oxp.c">
+		<Unit filename="C:/Users/Professional/CLionProjects/lemin_konichua/src/print_oxp.c">
 			<Option target="my_prinf"/>
 		</Unit>
-		<Unit filename="/home/agloin/school21/kate/lem_in_parcing/src/star_functions.c">
+		<Unit filename="C:/Users/Professional/CLionProjects/lemin_konichua/src/star_functions.c">
 			<Option target="my_prinf"/>
 		</Unit>
-		<Unit filename="/home/agloin/school21/kate/lem_in_parcing/src/time.c">
+		<Unit filename="C:/Users/Professional/CLionProjects/lemin_konichua/src/time.c">
 			<Option target="my_prinf"/>
 		</Unit>
-		<Unit filename="/home/agloin/school21/kate/lem_in_parcing/CMakeLists.txt">
+		<Unit filename="C:/Users/Professional/CLionProjects/lemin_konichua/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
