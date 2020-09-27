@@ -17,7 +17,11 @@ typedef struct 			s_lemin
 	char **names; // названия вершин. по names можно однозначно присвоить индекс названию вершины
 	int **adj_matrix; // матрица смежностей. индексы [i][j] соответствуют индексам из names
 	int n; // размерность матрицы
+	int *marked_graph; // метки вершин по алгоритму дейкстры. индекс элемента соответствует индексу вершины, значение элемента - значению метки
+	int **ways; // найденные пути
+	int **copy_matrix; // точная копия adj_matrix
 }						t_lemin;
+
 
 int 	len_arr(char **str);
 void	add_name(t_lemin **lemin, char *str);
@@ -31,6 +35,18 @@ void 	set_comment(t_lemin **lemin, char **arr);
 int 	fix_links(t_lemin **lemin, char **links);
 int		check_struct(t_lemin **lemin);
 int 	exit_func(t_lemin **lemin);
-
+void 	algorithm(t_lemin **lemin);
+void 	bhandari(t_lemin **lemin);
+void	allocate_memory_marked_graph(t_lemin **lemin);
+void 	mark_vertices_with_infinity(t_lemin **lemin);
+void ft_output_names(t_lemin **lemin);
+void ft_output_matrix(t_lemin **lemin);
+void 	del_loops(t_lemin **lemin);
+void	nullify_ways(t_lemin **lemin);
+void output_ways(t_lemin **lemin);
+void 	delete_way(t_lemin **lemin);
+int		bellman_ford(t_lemin **lemin, int current, int i);
+void	fix_found_way(t_lemin **lemin, int current, int i);
+void 	copy_matrix(t_lemin **lemin);
 
 #endif

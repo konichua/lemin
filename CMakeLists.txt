@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.15)
-project(my_prinf C)
+project(lemin_konichua C)
 
 set(CMAKE_C_STANDARD 11)
 
@@ -7,7 +7,7 @@ include_directories(.)
 include_directories(includes)
 include_directories(libft)
 
-add_executable(my_prinf
+add_executable(lemin_konichua
         includes/ft_printf.h
         libft/ft_atoi.c
         libft/ft_bzero.c
@@ -99,5 +99,9 @@ add_executable(my_prinf
         src/print_oxp.c
         src/star_functions.c
         src/time.c
+        algorithm.c
         lemin.h
-        main.c)
+        main.c
+        nullify.c
+        parcing.c
+        usual_funcs.c)

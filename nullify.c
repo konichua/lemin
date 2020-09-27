@@ -33,3 +33,20 @@ void	nullify_struct(t_lemin **lemin)
 	(*lemin)->n = -1;
 }
 
+void	nullify_ways(t_lemin **lemin)
+{
+	int i;
+	int j;
+
+	i = 0;
+	while (i < (*lemin)->n)
+	{
+		j = 0;
+		while (j < (*lemin)->n)
+		{
+			(*lemin)->ways[i][j] = 0;
+			j++;
+		}
+		i++;
+	}
+}

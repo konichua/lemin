@@ -62,9 +62,11 @@ void 	allocate_memory_matrix(t_lemin **lemin)
 	i = 0;
 	(*lemin)->n = len_arr((*lemin)->names); // размерность матрицы = количеству вершин
 	(*lemin)->adj_matrix = (int **)malloc(sizeof(int *) * (*lemin)->n);
+	(*lemin)->copy_matrix = (int **)malloc(sizeof(int *) * (*lemin)->n);
 	while (i < (*lemin)->n)
 	{
 		(*lemin)->adj_matrix[i] = (int *)malloc(sizeof(int) * (*lemin)->n);
+		(*lemin)->copy_matrix[i] = (int *)malloc(sizeof(int) * (*lemin)->n);
 		i++;
 	}
 }
@@ -102,6 +104,54 @@ int		check_struct(t_lemin **lemin)
 	return 0;
 }
 
+void	allocate_memory_marked_graph(t_lemin **lemin)
+{
+	(*lemin)->marked_graph = (int *)malloc(sizeof(int) * (*lemin)->n);
+}
+
+void 	del_loops(t_lemin **lemin)
+{
+	int i;
+
+	i = 0;
+	while (i < (*lemin)->n)
+	{
+		(*lemin)->adj_matrix[i][i] = 0;
+		i++;
+	}
+}
+
+void 	allocate_memory_ways(t_lemin **lemin)
+{
+	int i;
+
+	i = 0;
+	(*lemin)->ways = (int **)malloc(sizeof(int *) * (*lemin)->n);
+	while (i < (*lemin)->n)
+	{
+		(*lemin)->ways[i] = (int *)malloc(sizeof(int) * (*lemin)->n);
+		i++;
+	}
+}
+
+void 	copy_matrix(t_lemin **lemin)
+{
+	int i;
+	int j;
+
+	i = 0;
+	while (i < (*lemin)->n)
+	{
+		j = 0;
+		while (j < (*lemin)->n)
+		{
+			(*lemin)->copy_matrix[i][j] = (*lemin)->adj_matrix[i][j];
+			j++;
+		}
+		i++;
+	}
+}
+
 int		parse_map(t_lemin **lemin)
 {
 	char *line; // for gnl
@@ -132,6 +182,7 @@ int		parse_map(t_lemin **lemin)
 				// записываем связи в adj_matrix
 				if (fix_links(lemin, links))
 					return -1;
+//				ft_output_matrix(lemin);
 			}
 			// ну или это количество муравьев
 			else if (ft_isdigit((int)arr[0][0]))
@@ -152,8 +203,14 @@ int		parse_map(t_lemin **lemin)
 		}
 		else
 		{
+			break;
 			return -1;
 		}
 	}
+	del_loops(lemin);
+	allocate_memory_marked_graph(lemin);
+	allocate_memory_ways(lemin);
+	nullify_ways(lemin);
+	copy_matrix(lemin);
 	return check_struct(lemin);
 }

@@ -110,17 +110,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named my_prinf
+# Target rules for targets named lemin_konichua
 
 # Build rule for target.
-my_prinf: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 my_prinf
-.PHONY : my_prinf
+lemin_konichua: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 lemin_konichua
+.PHONY : lemin_konichua
 
 # fast build rule for target.
-my_prinf/fast:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/build
-.PHONY : my_prinf/fast
+lemin_konichua/fast:
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/build
+.PHONY : lemin_konichua/fast
+
+algorithm.obj: algorithm.c.obj
+
+.PHONY : algorithm.obj
+
+# target to build an object file
+algorithm.c.obj:
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/algorithm.c.obj
+.PHONY : algorithm.c.obj
+
+algorithm.i: algorithm.c.i
+
+.PHONY : algorithm.i
+
+# target to preprocess a source file
+algorithm.c.i:
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/algorithm.c.i
+.PHONY : algorithm.c.i
+
+algorithm.s: algorithm.c.s
+
+.PHONY : algorithm.s
+
+# target to generate assembly for a file
+algorithm.c.s:
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/algorithm.c.s
+.PHONY : algorithm.c.s
 
 libft/ft_atoi.obj: libft/ft_atoi.c.obj
 
@@ -128,7 +155,7 @@ libft/ft_atoi.obj: libft/ft_atoi.c.obj
 
 # target to build an object file
 libft/ft_atoi.c.obj:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_atoi.c.obj
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_atoi.c.obj
 .PHONY : libft/ft_atoi.c.obj
 
 libft/ft_atoi.i: libft/ft_atoi.c.i
@@ -137,7 +164,7 @@ libft/ft_atoi.i: libft/ft_atoi.c.i
 
 # target to preprocess a source file
 libft/ft_atoi.c.i:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_atoi.c.i
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_atoi.c.i
 .PHONY : libft/ft_atoi.c.i
 
 libft/ft_atoi.s: libft/ft_atoi.c.s
@@ -146,7 +173,7 @@ libft/ft_atoi.s: libft/ft_atoi.c.s
 
 # target to generate assembly for a file
 libft/ft_atoi.c.s:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_atoi.c.s
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_atoi.c.s
 .PHONY : libft/ft_atoi.c.s
 
 libft/ft_bzero.obj: libft/ft_bzero.c.obj
@@ -155,7 +182,7 @@ libft/ft_bzero.obj: libft/ft_bzero.c.obj
 
 # target to build an object file
 libft/ft_bzero.c.obj:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_bzero.c.obj
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_bzero.c.obj
 .PHONY : libft/ft_bzero.c.obj
 
 libft/ft_bzero.i: libft/ft_bzero.c.i
@@ -164,7 +191,7 @@ libft/ft_bzero.i: libft/ft_bzero.c.i
 
 # target to preprocess a source file
 libft/ft_bzero.c.i:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_bzero.c.i
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_bzero.c.i
 .PHONY : libft/ft_bzero.c.i
 
 libft/ft_bzero.s: libft/ft_bzero.c.s
@@ -173,7 +200,7 @@ libft/ft_bzero.s: libft/ft_bzero.c.s
 
 # target to generate assembly for a file
 libft/ft_bzero.c.s:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_bzero.c.s
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_bzero.c.s
 .PHONY : libft/ft_bzero.c.s
 
 libft/ft_countletters.obj: libft/ft_countletters.c.obj
@@ -182,7 +209,7 @@ libft/ft_countletters.obj: libft/ft_countletters.c.obj
 
 # target to build an object file
 libft/ft_countletters.c.obj:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_countletters.c.obj
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_countletters.c.obj
 .PHONY : libft/ft_countletters.c.obj
 
 libft/ft_countletters.i: libft/ft_countletters.c.i
@@ -191,7 +218,7 @@ libft/ft_countletters.i: libft/ft_countletters.c.i
 
 # target to preprocess a source file
 libft/ft_countletters.c.i:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_countletters.c.i
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_countletters.c.i
 .PHONY : libft/ft_countletters.c.i
 
 libft/ft_countletters.s: libft/ft_countletters.c.s
@@ -200,7 +227,7 @@ libft/ft_countletters.s: libft/ft_countletters.c.s
 
 # target to generate assembly for a file
 libft/ft_countletters.c.s:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_countletters.c.s
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_countletters.c.s
 .PHONY : libft/ft_countletters.c.s
 
 libft/ft_countwds.obj: libft/ft_countwds.c.obj
@@ -209,7 +236,7 @@ libft/ft_countwds.obj: libft/ft_countwds.c.obj
 
 # target to build an object file
 libft/ft_countwds.c.obj:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_countwds.c.obj
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_countwds.c.obj
 .PHONY : libft/ft_countwds.c.obj
 
 libft/ft_countwds.i: libft/ft_countwds.c.i
@@ -218,7 +245,7 @@ libft/ft_countwds.i: libft/ft_countwds.c.i
 
 # target to preprocess a source file
 libft/ft_countwds.c.i:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_countwds.c.i
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_countwds.c.i
 .PHONY : libft/ft_countwds.c.i
 
 libft/ft_countwds.s: libft/ft_countwds.c.s
@@ -227,7 +254,7 @@ libft/ft_countwds.s: libft/ft_countwds.c.s
 
 # target to generate assembly for a file
 libft/ft_countwds.c.s:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_countwds.c.s
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_countwds.c.s
 .PHONY : libft/ft_countwds.c.s
 
 libft/ft_isalnum.obj: libft/ft_isalnum.c.obj
@@ -236,7 +263,7 @@ libft/ft_isalnum.obj: libft/ft_isalnum.c.obj
 
 # target to build an object file
 libft/ft_isalnum.c.obj:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_isalnum.c.obj
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_isalnum.c.obj
 .PHONY : libft/ft_isalnum.c.obj
 
 libft/ft_isalnum.i: libft/ft_isalnum.c.i
@@ -245,7 +272,7 @@ libft/ft_isalnum.i: libft/ft_isalnum.c.i
 
 # target to preprocess a source file
 libft/ft_isalnum.c.i:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_isalnum.c.i
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_isalnum.c.i
 .PHONY : libft/ft_isalnum.c.i
 
 libft/ft_isalnum.s: libft/ft_isalnum.c.s
@@ -254,7 +281,7 @@ libft/ft_isalnum.s: libft/ft_isalnum.c.s
 
 # target to generate assembly for a file
 libft/ft_isalnum.c.s:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_isalnum.c.s
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_isalnum.c.s
 .PHONY : libft/ft_isalnum.c.s
 
 libft/ft_isalpha.obj: libft/ft_isalpha.c.obj
@@ -263,7 +290,7 @@ libft/ft_isalpha.obj: libft/ft_isalpha.c.obj
 
 # target to build an object file
 libft/ft_isalpha.c.obj:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_isalpha.c.obj
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_isalpha.c.obj
 .PHONY : libft/ft_isalpha.c.obj
 
 libft/ft_isalpha.i: libft/ft_isalpha.c.i
@@ -272,7 +299,7 @@ libft/ft_isalpha.i: libft/ft_isalpha.c.i
 
 # target to preprocess a source file
 libft/ft_isalpha.c.i:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_isalpha.c.i
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_isalpha.c.i
 .PHONY : libft/ft_isalpha.c.i
 
 libft/ft_isalpha.s: libft/ft_isalpha.c.s
@@ -281,7 +308,7 @@ libft/ft_isalpha.s: libft/ft_isalpha.c.s
 
 # target to generate assembly for a file
 libft/ft_isalpha.c.s:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_isalpha.c.s
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_isalpha.c.s
 .PHONY : libft/ft_isalpha.c.s
 
 libft/ft_isascii.obj: libft/ft_isascii.c.obj
@@ -290,7 +317,7 @@ libft/ft_isascii.obj: libft/ft_isascii.c.obj
 
 # target to build an object file
 libft/ft_isascii.c.obj:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_isascii.c.obj
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_isascii.c.obj
 .PHONY : libft/ft_isascii.c.obj
 
 libft/ft_isascii.i: libft/ft_isascii.c.i
@@ -299,7 +326,7 @@ libft/ft_isascii.i: libft/ft_isascii.c.i
 
 # target to preprocess a source file
 libft/ft_isascii.c.i:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_isascii.c.i
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_isascii.c.i
 .PHONY : libft/ft_isascii.c.i
 
 libft/ft_isascii.s: libft/ft_isascii.c.s
@@ -308,7 +335,7 @@ libft/ft_isascii.s: libft/ft_isascii.c.s
 
 # target to generate assembly for a file
 libft/ft_isascii.c.s:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_isascii.c.s
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_isascii.c.s
 .PHONY : libft/ft_isascii.c.s
 
 libft/ft_isdigit.obj: libft/ft_isdigit.c.obj
@@ -317,7 +344,7 @@ libft/ft_isdigit.obj: libft/ft_isdigit.c.obj
 
 # target to build an object file
 libft/ft_isdigit.c.obj:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_isdigit.c.obj
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_isdigit.c.obj
 .PHONY : libft/ft_isdigit.c.obj
 
 libft/ft_isdigit.i: libft/ft_isdigit.c.i
@@ -326,7 +353,7 @@ libft/ft_isdigit.i: libft/ft_isdigit.c.i
 
 # target to preprocess a source file
 libft/ft_isdigit.c.i:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_isdigit.c.i
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_isdigit.c.i
 .PHONY : libft/ft_isdigit.c.i
 
 libft/ft_isdigit.s: libft/ft_isdigit.c.s
@@ -335,7 +362,7 @@ libft/ft_isdigit.s: libft/ft_isdigit.c.s
 
 # target to generate assembly for a file
 libft/ft_isdigit.c.s:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_isdigit.c.s
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_isdigit.c.s
 .PHONY : libft/ft_isdigit.c.s
 
 libft/ft_isprint.obj: libft/ft_isprint.c.obj
@@ -344,7 +371,7 @@ libft/ft_isprint.obj: libft/ft_isprint.c.obj
 
 # target to build an object file
 libft/ft_isprint.c.obj:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_isprint.c.obj
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_isprint.c.obj
 .PHONY : libft/ft_isprint.c.obj
 
 libft/ft_isprint.i: libft/ft_isprint.c.i
@@ -353,7 +380,7 @@ libft/ft_isprint.i: libft/ft_isprint.c.i
 
 # target to preprocess a source file
 libft/ft_isprint.c.i:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_isprint.c.i
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_isprint.c.i
 .PHONY : libft/ft_isprint.c.i
 
 libft/ft_isprint.s: libft/ft_isprint.c.s
@@ -362,7 +389,7 @@ libft/ft_isprint.s: libft/ft_isprint.c.s
 
 # target to generate assembly for a file
 libft/ft_isprint.c.s:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_isprint.c.s
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_isprint.c.s
 .PHONY : libft/ft_isprint.c.s
 
 libft/ft_itoa.obj: libft/ft_itoa.c.obj
@@ -371,7 +398,7 @@ libft/ft_itoa.obj: libft/ft_itoa.c.obj
 
 # target to build an object file
 libft/ft_itoa.c.obj:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_itoa.c.obj
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_itoa.c.obj
 .PHONY : libft/ft_itoa.c.obj
 
 libft/ft_itoa.i: libft/ft_itoa.c.i
@@ -380,7 +407,7 @@ libft/ft_itoa.i: libft/ft_itoa.c.i
 
 # target to preprocess a source file
 libft/ft_itoa.c.i:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_itoa.c.i
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_itoa.c.i
 .PHONY : libft/ft_itoa.c.i
 
 libft/ft_itoa.s: libft/ft_itoa.c.s
@@ -389,7 +416,7 @@ libft/ft_itoa.s: libft/ft_itoa.c.s
 
 # target to generate assembly for a file
 libft/ft_itoa.c.s:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_itoa.c.s
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_itoa.c.s
 .PHONY : libft/ft_itoa.c.s
 
 libft/ft_lstadd.obj: libft/ft_lstadd.c.obj
@@ -398,7 +425,7 @@ libft/ft_lstadd.obj: libft/ft_lstadd.c.obj
 
 # target to build an object file
 libft/ft_lstadd.c.obj:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_lstadd.c.obj
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_lstadd.c.obj
 .PHONY : libft/ft_lstadd.c.obj
 
 libft/ft_lstadd.i: libft/ft_lstadd.c.i
@@ -407,7 +434,7 @@ libft/ft_lstadd.i: libft/ft_lstadd.c.i
 
 # target to preprocess a source file
 libft/ft_lstadd.c.i:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_lstadd.c.i
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_lstadd.c.i
 .PHONY : libft/ft_lstadd.c.i
 
 libft/ft_lstadd.s: libft/ft_lstadd.c.s
@@ -416,7 +443,7 @@ libft/ft_lstadd.s: libft/ft_lstadd.c.s
 
 # target to generate assembly for a file
 libft/ft_lstadd.c.s:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_lstadd.c.s
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_lstadd.c.s
 .PHONY : libft/ft_lstadd.c.s
 
 libft/ft_lstdel.obj: libft/ft_lstdel.c.obj
@@ -425,7 +452,7 @@ libft/ft_lstdel.obj: libft/ft_lstdel.c.obj
 
 # target to build an object file
 libft/ft_lstdel.c.obj:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_lstdel.c.obj
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_lstdel.c.obj
 .PHONY : libft/ft_lstdel.c.obj
 
 libft/ft_lstdel.i: libft/ft_lstdel.c.i
@@ -434,7 +461,7 @@ libft/ft_lstdel.i: libft/ft_lstdel.c.i
 
 # target to preprocess a source file
 libft/ft_lstdel.c.i:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_lstdel.c.i
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_lstdel.c.i
 .PHONY : libft/ft_lstdel.c.i
 
 libft/ft_lstdel.s: libft/ft_lstdel.c.s
@@ -443,7 +470,7 @@ libft/ft_lstdel.s: libft/ft_lstdel.c.s
 
 # target to generate assembly for a file
 libft/ft_lstdel.c.s:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_lstdel.c.s
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_lstdel.c.s
 .PHONY : libft/ft_lstdel.c.s
 
 libft/ft_lstdelone.obj: libft/ft_lstdelone.c.obj
@@ -452,7 +479,7 @@ libft/ft_lstdelone.obj: libft/ft_lstdelone.c.obj
 
 # target to build an object file
 libft/ft_lstdelone.c.obj:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_lstdelone.c.obj
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_lstdelone.c.obj
 .PHONY : libft/ft_lstdelone.c.obj
 
 libft/ft_lstdelone.i: libft/ft_lstdelone.c.i
@@ -461,7 +488,7 @@ libft/ft_lstdelone.i: libft/ft_lstdelone.c.i
 
 # target to preprocess a source file
 libft/ft_lstdelone.c.i:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_lstdelone.c.i
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_lstdelone.c.i
 .PHONY : libft/ft_lstdelone.c.i
 
 libft/ft_lstdelone.s: libft/ft_lstdelone.c.s
@@ -470,7 +497,7 @@ libft/ft_lstdelone.s: libft/ft_lstdelone.c.s
 
 # target to generate assembly for a file
 libft/ft_lstdelone.c.s:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_lstdelone.c.s
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_lstdelone.c.s
 .PHONY : libft/ft_lstdelone.c.s
 
 libft/ft_lstiter.obj: libft/ft_lstiter.c.obj
@@ -479,7 +506,7 @@ libft/ft_lstiter.obj: libft/ft_lstiter.c.obj
 
 # target to build an object file
 libft/ft_lstiter.c.obj:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_lstiter.c.obj
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_lstiter.c.obj
 .PHONY : libft/ft_lstiter.c.obj
 
 libft/ft_lstiter.i: libft/ft_lstiter.c.i
@@ -488,7 +515,7 @@ libft/ft_lstiter.i: libft/ft_lstiter.c.i
 
 # target to preprocess a source file
 libft/ft_lstiter.c.i:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_lstiter.c.i
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_lstiter.c.i
 .PHONY : libft/ft_lstiter.c.i
 
 libft/ft_lstiter.s: libft/ft_lstiter.c.s
@@ -497,7 +524,7 @@ libft/ft_lstiter.s: libft/ft_lstiter.c.s
 
 # target to generate assembly for a file
 libft/ft_lstiter.c.s:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_lstiter.c.s
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_lstiter.c.s
 .PHONY : libft/ft_lstiter.c.s
 
 libft/ft_lstmap.obj: libft/ft_lstmap.c.obj
@@ -506,7 +533,7 @@ libft/ft_lstmap.obj: libft/ft_lstmap.c.obj
 
 # target to build an object file
 libft/ft_lstmap.c.obj:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_lstmap.c.obj
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_lstmap.c.obj
 .PHONY : libft/ft_lstmap.c.obj
 
 libft/ft_lstmap.i: libft/ft_lstmap.c.i
@@ -515,7 +542,7 @@ libft/ft_lstmap.i: libft/ft_lstmap.c.i
 
 # target to preprocess a source file
 libft/ft_lstmap.c.i:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_lstmap.c.i
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_lstmap.c.i
 .PHONY : libft/ft_lstmap.c.i
 
 libft/ft_lstmap.s: libft/ft_lstmap.c.s
@@ -524,7 +551,7 @@ libft/ft_lstmap.s: libft/ft_lstmap.c.s
 
 # target to generate assembly for a file
 libft/ft_lstmap.c.s:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_lstmap.c.s
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_lstmap.c.s
 .PHONY : libft/ft_lstmap.c.s
 
 libft/ft_lstnew.obj: libft/ft_lstnew.c.obj
@@ -533,7 +560,7 @@ libft/ft_lstnew.obj: libft/ft_lstnew.c.obj
 
 # target to build an object file
 libft/ft_lstnew.c.obj:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_lstnew.c.obj
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_lstnew.c.obj
 .PHONY : libft/ft_lstnew.c.obj
 
 libft/ft_lstnew.i: libft/ft_lstnew.c.i
@@ -542,7 +569,7 @@ libft/ft_lstnew.i: libft/ft_lstnew.c.i
 
 # target to preprocess a source file
 libft/ft_lstnew.c.i:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_lstnew.c.i
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_lstnew.c.i
 .PHONY : libft/ft_lstnew.c.i
 
 libft/ft_lstnew.s: libft/ft_lstnew.c.s
@@ -551,7 +578,7 @@ libft/ft_lstnew.s: libft/ft_lstnew.c.s
 
 # target to generate assembly for a file
 libft/ft_lstnew.c.s:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_lstnew.c.s
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_lstnew.c.s
 .PHONY : libft/ft_lstnew.c.s
 
 libft/ft_memalloc.obj: libft/ft_memalloc.c.obj
@@ -560,7 +587,7 @@ libft/ft_memalloc.obj: libft/ft_memalloc.c.obj
 
 # target to build an object file
 libft/ft_memalloc.c.obj:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_memalloc.c.obj
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_memalloc.c.obj
 .PHONY : libft/ft_memalloc.c.obj
 
 libft/ft_memalloc.i: libft/ft_memalloc.c.i
@@ -569,7 +596,7 @@ libft/ft_memalloc.i: libft/ft_memalloc.c.i
 
 # target to preprocess a source file
 libft/ft_memalloc.c.i:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_memalloc.c.i
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_memalloc.c.i
 .PHONY : libft/ft_memalloc.c.i
 
 libft/ft_memalloc.s: libft/ft_memalloc.c.s
@@ -578,7 +605,7 @@ libft/ft_memalloc.s: libft/ft_memalloc.c.s
 
 # target to generate assembly for a file
 libft/ft_memalloc.c.s:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_memalloc.c.s
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_memalloc.c.s
 .PHONY : libft/ft_memalloc.c.s
 
 libft/ft_memccpy.obj: libft/ft_memccpy.c.obj
@@ -587,7 +614,7 @@ libft/ft_memccpy.obj: libft/ft_memccpy.c.obj
 
 # target to build an object file
 libft/ft_memccpy.c.obj:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_memccpy.c.obj
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_memccpy.c.obj
 .PHONY : libft/ft_memccpy.c.obj
 
 libft/ft_memccpy.i: libft/ft_memccpy.c.i
@@ -596,7 +623,7 @@ libft/ft_memccpy.i: libft/ft_memccpy.c.i
 
 # target to preprocess a source file
 libft/ft_memccpy.c.i:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_memccpy.c.i
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_memccpy.c.i
 .PHONY : libft/ft_memccpy.c.i
 
 libft/ft_memccpy.s: libft/ft_memccpy.c.s
@@ -605,7 +632,7 @@ libft/ft_memccpy.s: libft/ft_memccpy.c.s
 
 # target to generate assembly for a file
 libft/ft_memccpy.c.s:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_memccpy.c.s
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_memccpy.c.s
 .PHONY : libft/ft_memccpy.c.s
 
 libft/ft_memchr.obj: libft/ft_memchr.c.obj
@@ -614,7 +641,7 @@ libft/ft_memchr.obj: libft/ft_memchr.c.obj
 
 # target to build an object file
 libft/ft_memchr.c.obj:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_memchr.c.obj
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_memchr.c.obj
 .PHONY : libft/ft_memchr.c.obj
 
 libft/ft_memchr.i: libft/ft_memchr.c.i
@@ -623,7 +650,7 @@ libft/ft_memchr.i: libft/ft_memchr.c.i
 
 # target to preprocess a source file
 libft/ft_memchr.c.i:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_memchr.c.i
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_memchr.c.i
 .PHONY : libft/ft_memchr.c.i
 
 libft/ft_memchr.s: libft/ft_memchr.c.s
@@ -632,7 +659,7 @@ libft/ft_memchr.s: libft/ft_memchr.c.s
 
 # target to generate assembly for a file
 libft/ft_memchr.c.s:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_memchr.c.s
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_memchr.c.s
 .PHONY : libft/ft_memchr.c.s
 
 libft/ft_memcmp.obj: libft/ft_memcmp.c.obj
@@ -641,7 +668,7 @@ libft/ft_memcmp.obj: libft/ft_memcmp.c.obj
 
 # target to build an object file
 libft/ft_memcmp.c.obj:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_memcmp.c.obj
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_memcmp.c.obj
 .PHONY : libft/ft_memcmp.c.obj
 
 libft/ft_memcmp.i: libft/ft_memcmp.c.i
@@ -650,7 +677,7 @@ libft/ft_memcmp.i: libft/ft_memcmp.c.i
 
 # target to preprocess a source file
 libft/ft_memcmp.c.i:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_memcmp.c.i
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_memcmp.c.i
 .PHONY : libft/ft_memcmp.c.i
 
 libft/ft_memcmp.s: libft/ft_memcmp.c.s
@@ -659,7 +686,7 @@ libft/ft_memcmp.s: libft/ft_memcmp.c.s
 
 # target to generate assembly for a file
 libft/ft_memcmp.c.s:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_memcmp.c.s
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_memcmp.c.s
 .PHONY : libft/ft_memcmp.c.s
 
 libft/ft_memcpy.obj: libft/ft_memcpy.c.obj
@@ -668,7 +695,7 @@ libft/ft_memcpy.obj: libft/ft_memcpy.c.obj
 
 # target to build an object file
 libft/ft_memcpy.c.obj:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_memcpy.c.obj
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_memcpy.c.obj
 .PHONY : libft/ft_memcpy.c.obj
 
 libft/ft_memcpy.i: libft/ft_memcpy.c.i
@@ -677,7 +704,7 @@ libft/ft_memcpy.i: libft/ft_memcpy.c.i
 
 # target to preprocess a source file
 libft/ft_memcpy.c.i:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_memcpy.c.i
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_memcpy.c.i
 .PHONY : libft/ft_memcpy.c.i
 
 libft/ft_memcpy.s: libft/ft_memcpy.c.s
@@ -686,7 +713,7 @@ libft/ft_memcpy.s: libft/ft_memcpy.c.s
 
 # target to generate assembly for a file
 libft/ft_memcpy.c.s:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_memcpy.c.s
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_memcpy.c.s
 .PHONY : libft/ft_memcpy.c.s
 
 libft/ft_memdel.obj: libft/ft_memdel.c.obj
@@ -695,7 +722,7 @@ libft/ft_memdel.obj: libft/ft_memdel.c.obj
 
 # target to build an object file
 libft/ft_memdel.c.obj:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_memdel.c.obj
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_memdel.c.obj
 .PHONY : libft/ft_memdel.c.obj
 
 libft/ft_memdel.i: libft/ft_memdel.c.i
@@ -704,7 +731,7 @@ libft/ft_memdel.i: libft/ft_memdel.c.i
 
 # target to preprocess a source file
 libft/ft_memdel.c.i:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_memdel.c.i
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_memdel.c.i
 .PHONY : libft/ft_memdel.c.i
 
 libft/ft_memdel.s: libft/ft_memdel.c.s
@@ -713,7 +740,7 @@ libft/ft_memdel.s: libft/ft_memdel.c.s
 
 # target to generate assembly for a file
 libft/ft_memdel.c.s:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_memdel.c.s
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_memdel.c.s
 .PHONY : libft/ft_memdel.c.s
 
 libft/ft_memmove.obj: libft/ft_memmove.c.obj
@@ -722,7 +749,7 @@ libft/ft_memmove.obj: libft/ft_memmove.c.obj
 
 # target to build an object file
 libft/ft_memmove.c.obj:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_memmove.c.obj
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_memmove.c.obj
 .PHONY : libft/ft_memmove.c.obj
 
 libft/ft_memmove.i: libft/ft_memmove.c.i
@@ -731,7 +758,7 @@ libft/ft_memmove.i: libft/ft_memmove.c.i
 
 # target to preprocess a source file
 libft/ft_memmove.c.i:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_memmove.c.i
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_memmove.c.i
 .PHONY : libft/ft_memmove.c.i
 
 libft/ft_memmove.s: libft/ft_memmove.c.s
@@ -740,7 +767,7 @@ libft/ft_memmove.s: libft/ft_memmove.c.s
 
 # target to generate assembly for a file
 libft/ft_memmove.c.s:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_memmove.c.s
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_memmove.c.s
 .PHONY : libft/ft_memmove.c.s
 
 libft/ft_memset.obj: libft/ft_memset.c.obj
@@ -749,7 +776,7 @@ libft/ft_memset.obj: libft/ft_memset.c.obj
 
 # target to build an object file
 libft/ft_memset.c.obj:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_memset.c.obj
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_memset.c.obj
 .PHONY : libft/ft_memset.c.obj
 
 libft/ft_memset.i: libft/ft_memset.c.i
@@ -758,7 +785,7 @@ libft/ft_memset.i: libft/ft_memset.c.i
 
 # target to preprocess a source file
 libft/ft_memset.c.i:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_memset.c.i
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_memset.c.i
 .PHONY : libft/ft_memset.c.i
 
 libft/ft_memset.s: libft/ft_memset.c.s
@@ -767,7 +794,7 @@ libft/ft_memset.s: libft/ft_memset.c.s
 
 # target to generate assembly for a file
 libft/ft_memset.c.s:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_memset.c.s
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_memset.c.s
 .PHONY : libft/ft_memset.c.s
 
 libft/ft_putchar.obj: libft/ft_putchar.c.obj
@@ -776,7 +803,7 @@ libft/ft_putchar.obj: libft/ft_putchar.c.obj
 
 # target to build an object file
 libft/ft_putchar.c.obj:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_putchar.c.obj
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_putchar.c.obj
 .PHONY : libft/ft_putchar.c.obj
 
 libft/ft_putchar.i: libft/ft_putchar.c.i
@@ -785,7 +812,7 @@ libft/ft_putchar.i: libft/ft_putchar.c.i
 
 # target to preprocess a source file
 libft/ft_putchar.c.i:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_putchar.c.i
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_putchar.c.i
 .PHONY : libft/ft_putchar.c.i
 
 libft/ft_putchar.s: libft/ft_putchar.c.s
@@ -794,7 +821,7 @@ libft/ft_putchar.s: libft/ft_putchar.c.s
 
 # target to generate assembly for a file
 libft/ft_putchar.c.s:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_putchar.c.s
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_putchar.c.s
 .PHONY : libft/ft_putchar.c.s
 
 libft/ft_putchar_fd.obj: libft/ft_putchar_fd.c.obj
@@ -803,7 +830,7 @@ libft/ft_putchar_fd.obj: libft/ft_putchar_fd.c.obj
 
 # target to build an object file
 libft/ft_putchar_fd.c.obj:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_putchar_fd.c.obj
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_putchar_fd.c.obj
 .PHONY : libft/ft_putchar_fd.c.obj
 
 libft/ft_putchar_fd.i: libft/ft_putchar_fd.c.i
@@ -812,7 +839,7 @@ libft/ft_putchar_fd.i: libft/ft_putchar_fd.c.i
 
 # target to preprocess a source file
 libft/ft_putchar_fd.c.i:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_putchar_fd.c.i
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_putchar_fd.c.i
 .PHONY : libft/ft_putchar_fd.c.i
 
 libft/ft_putchar_fd.s: libft/ft_putchar_fd.c.s
@@ -821,7 +848,7 @@ libft/ft_putchar_fd.s: libft/ft_putchar_fd.c.s
 
 # target to generate assembly for a file
 libft/ft_putchar_fd.c.s:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_putchar_fd.c.s
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_putchar_fd.c.s
 .PHONY : libft/ft_putchar_fd.c.s
 
 libft/ft_putendl.obj: libft/ft_putendl.c.obj
@@ -830,7 +857,7 @@ libft/ft_putendl.obj: libft/ft_putendl.c.obj
 
 # target to build an object file
 libft/ft_putendl.c.obj:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_putendl.c.obj
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_putendl.c.obj
 .PHONY : libft/ft_putendl.c.obj
 
 libft/ft_putendl.i: libft/ft_putendl.c.i
@@ -839,7 +866,7 @@ libft/ft_putendl.i: libft/ft_putendl.c.i
 
 # target to preprocess a source file
 libft/ft_putendl.c.i:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_putendl.c.i
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_putendl.c.i
 .PHONY : libft/ft_putendl.c.i
 
 libft/ft_putendl.s: libft/ft_putendl.c.s
@@ -848,7 +875,7 @@ libft/ft_putendl.s: libft/ft_putendl.c.s
 
 # target to generate assembly for a file
 libft/ft_putendl.c.s:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_putendl.c.s
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_putendl.c.s
 .PHONY : libft/ft_putendl.c.s
 
 libft/ft_putendl_fd.obj: libft/ft_putendl_fd.c.obj
@@ -857,7 +884,7 @@ libft/ft_putendl_fd.obj: libft/ft_putendl_fd.c.obj
 
 # target to build an object file
 libft/ft_putendl_fd.c.obj:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_putendl_fd.c.obj
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_putendl_fd.c.obj
 .PHONY : libft/ft_putendl_fd.c.obj
 
 libft/ft_putendl_fd.i: libft/ft_putendl_fd.c.i
@@ -866,7 +893,7 @@ libft/ft_putendl_fd.i: libft/ft_putendl_fd.c.i
 
 # target to preprocess a source file
 libft/ft_putendl_fd.c.i:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_putendl_fd.c.i
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_putendl_fd.c.i
 .PHONY : libft/ft_putendl_fd.c.i
 
 libft/ft_putendl_fd.s: libft/ft_putendl_fd.c.s
@@ -875,7 +902,7 @@ libft/ft_putendl_fd.s: libft/ft_putendl_fd.c.s
 
 # target to generate assembly for a file
 libft/ft_putendl_fd.c.s:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_putendl_fd.c.s
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_putendl_fd.c.s
 .PHONY : libft/ft_putendl_fd.c.s
 
 libft/ft_putnbr.obj: libft/ft_putnbr.c.obj
@@ -884,7 +911,7 @@ libft/ft_putnbr.obj: libft/ft_putnbr.c.obj
 
 # target to build an object file
 libft/ft_putnbr.c.obj:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_putnbr.c.obj
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_putnbr.c.obj
 .PHONY : libft/ft_putnbr.c.obj
 
 libft/ft_putnbr.i: libft/ft_putnbr.c.i
@@ -893,7 +920,7 @@ libft/ft_putnbr.i: libft/ft_putnbr.c.i
 
 # target to preprocess a source file
 libft/ft_putnbr.c.i:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_putnbr.c.i
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_putnbr.c.i
 .PHONY : libft/ft_putnbr.c.i
 
 libft/ft_putnbr.s: libft/ft_putnbr.c.s
@@ -902,7 +929,7 @@ libft/ft_putnbr.s: libft/ft_putnbr.c.s
 
 # target to generate assembly for a file
 libft/ft_putnbr.c.s:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_putnbr.c.s
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_putnbr.c.s
 .PHONY : libft/ft_putnbr.c.s
 
 libft/ft_putnbr_fd.obj: libft/ft_putnbr_fd.c.obj
@@ -911,7 +938,7 @@ libft/ft_putnbr_fd.obj: libft/ft_putnbr_fd.c.obj
 
 # target to build an object file
 libft/ft_putnbr_fd.c.obj:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_putnbr_fd.c.obj
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_putnbr_fd.c.obj
 .PHONY : libft/ft_putnbr_fd.c.obj
 
 libft/ft_putnbr_fd.i: libft/ft_putnbr_fd.c.i
@@ -920,7 +947,7 @@ libft/ft_putnbr_fd.i: libft/ft_putnbr_fd.c.i
 
 # target to preprocess a source file
 libft/ft_putnbr_fd.c.i:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_putnbr_fd.c.i
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_putnbr_fd.c.i
 .PHONY : libft/ft_putnbr_fd.c.i
 
 libft/ft_putnbr_fd.s: libft/ft_putnbr_fd.c.s
@@ -929,7 +956,7 @@ libft/ft_putnbr_fd.s: libft/ft_putnbr_fd.c.s
 
 # target to generate assembly for a file
 libft/ft_putnbr_fd.c.s:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_putnbr_fd.c.s
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_putnbr_fd.c.s
 .PHONY : libft/ft_putnbr_fd.c.s
 
 libft/ft_putstr.obj: libft/ft_putstr.c.obj
@@ -938,7 +965,7 @@ libft/ft_putstr.obj: libft/ft_putstr.c.obj
 
 # target to build an object file
 libft/ft_putstr.c.obj:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_putstr.c.obj
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_putstr.c.obj
 .PHONY : libft/ft_putstr.c.obj
 
 libft/ft_putstr.i: libft/ft_putstr.c.i
@@ -947,7 +974,7 @@ libft/ft_putstr.i: libft/ft_putstr.c.i
 
 # target to preprocess a source file
 libft/ft_putstr.c.i:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_putstr.c.i
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_putstr.c.i
 .PHONY : libft/ft_putstr.c.i
 
 libft/ft_putstr.s: libft/ft_putstr.c.s
@@ -956,7 +983,7 @@ libft/ft_putstr.s: libft/ft_putstr.c.s
 
 # target to generate assembly for a file
 libft/ft_putstr.c.s:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_putstr.c.s
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_putstr.c.s
 .PHONY : libft/ft_putstr.c.s
 
 libft/ft_putstr_fd.obj: libft/ft_putstr_fd.c.obj
@@ -965,7 +992,7 @@ libft/ft_putstr_fd.obj: libft/ft_putstr_fd.c.obj
 
 # target to build an object file
 libft/ft_putstr_fd.c.obj:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_putstr_fd.c.obj
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_putstr_fd.c.obj
 .PHONY : libft/ft_putstr_fd.c.obj
 
 libft/ft_putstr_fd.i: libft/ft_putstr_fd.c.i
@@ -974,7 +1001,7 @@ libft/ft_putstr_fd.i: libft/ft_putstr_fd.c.i
 
 # target to preprocess a source file
 libft/ft_putstr_fd.c.i:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_putstr_fd.c.i
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_putstr_fd.c.i
 .PHONY : libft/ft_putstr_fd.c.i
 
 libft/ft_putstr_fd.s: libft/ft_putstr_fd.c.s
@@ -983,7 +1010,7 @@ libft/ft_putstr_fd.s: libft/ft_putstr_fd.c.s
 
 # target to generate assembly for a file
 libft/ft_putstr_fd.c.s:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_putstr_fd.c.s
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_putstr_fd.c.s
 .PHONY : libft/ft_putstr_fd.c.s
 
 libft/ft_strcat.obj: libft/ft_strcat.c.obj
@@ -992,7 +1019,7 @@ libft/ft_strcat.obj: libft/ft_strcat.c.obj
 
 # target to build an object file
 libft/ft_strcat.c.obj:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_strcat.c.obj
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_strcat.c.obj
 .PHONY : libft/ft_strcat.c.obj
 
 libft/ft_strcat.i: libft/ft_strcat.c.i
@@ -1001,7 +1028,7 @@ libft/ft_strcat.i: libft/ft_strcat.c.i
 
 # target to preprocess a source file
 libft/ft_strcat.c.i:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_strcat.c.i
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_strcat.c.i
 .PHONY : libft/ft_strcat.c.i
 
 libft/ft_strcat.s: libft/ft_strcat.c.s
@@ -1010,7 +1037,7 @@ libft/ft_strcat.s: libft/ft_strcat.c.s
 
 # target to generate assembly for a file
 libft/ft_strcat.c.s:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_strcat.c.s
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_strcat.c.s
 .PHONY : libft/ft_strcat.c.s
 
 libft/ft_strchr.obj: libft/ft_strchr.c.obj
@@ -1019,7 +1046,7 @@ libft/ft_strchr.obj: libft/ft_strchr.c.obj
 
 # target to build an object file
 libft/ft_strchr.c.obj:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_strchr.c.obj
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_strchr.c.obj
 .PHONY : libft/ft_strchr.c.obj
 
 libft/ft_strchr.i: libft/ft_strchr.c.i
@@ -1028,7 +1055,7 @@ libft/ft_strchr.i: libft/ft_strchr.c.i
 
 # target to preprocess a source file
 libft/ft_strchr.c.i:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_strchr.c.i
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_strchr.c.i
 .PHONY : libft/ft_strchr.c.i
 
 libft/ft_strchr.s: libft/ft_strchr.c.s
@@ -1037,7 +1064,7 @@ libft/ft_strchr.s: libft/ft_strchr.c.s
 
 # target to generate assembly for a file
 libft/ft_strchr.c.s:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_strchr.c.s
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_strchr.c.s
 .PHONY : libft/ft_strchr.c.s
 
 libft/ft_strclr.obj: libft/ft_strclr.c.obj
@@ -1046,7 +1073,7 @@ libft/ft_strclr.obj: libft/ft_strclr.c.obj
 
 # target to build an object file
 libft/ft_strclr.c.obj:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_strclr.c.obj
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_strclr.c.obj
 .PHONY : libft/ft_strclr.c.obj
 
 libft/ft_strclr.i: libft/ft_strclr.c.i
@@ -1055,7 +1082,7 @@ libft/ft_strclr.i: libft/ft_strclr.c.i
 
 # target to preprocess a source file
 libft/ft_strclr.c.i:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_strclr.c.i
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_strclr.c.i
 .PHONY : libft/ft_strclr.c.i
 
 libft/ft_strclr.s: libft/ft_strclr.c.s
@@ -1064,7 +1091,7 @@ libft/ft_strclr.s: libft/ft_strclr.c.s
 
 # target to generate assembly for a file
 libft/ft_strclr.c.s:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_strclr.c.s
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_strclr.c.s
 .PHONY : libft/ft_strclr.c.s
 
 libft/ft_strcmp.obj: libft/ft_strcmp.c.obj
@@ -1073,7 +1100,7 @@ libft/ft_strcmp.obj: libft/ft_strcmp.c.obj
 
 # target to build an object file
 libft/ft_strcmp.c.obj:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_strcmp.c.obj
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_strcmp.c.obj
 .PHONY : libft/ft_strcmp.c.obj
 
 libft/ft_strcmp.i: libft/ft_strcmp.c.i
@@ -1082,7 +1109,7 @@ libft/ft_strcmp.i: libft/ft_strcmp.c.i
 
 # target to preprocess a source file
 libft/ft_strcmp.c.i:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_strcmp.c.i
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_strcmp.c.i
 .PHONY : libft/ft_strcmp.c.i
 
 libft/ft_strcmp.s: libft/ft_strcmp.c.s
@@ -1091,7 +1118,7 @@ libft/ft_strcmp.s: libft/ft_strcmp.c.s
 
 # target to generate assembly for a file
 libft/ft_strcmp.c.s:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_strcmp.c.s
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_strcmp.c.s
 .PHONY : libft/ft_strcmp.c.s
 
 libft/ft_strcpy.obj: libft/ft_strcpy.c.obj
@@ -1100,7 +1127,7 @@ libft/ft_strcpy.obj: libft/ft_strcpy.c.obj
 
 # target to build an object file
 libft/ft_strcpy.c.obj:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_strcpy.c.obj
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_strcpy.c.obj
 .PHONY : libft/ft_strcpy.c.obj
 
 libft/ft_strcpy.i: libft/ft_strcpy.c.i
@@ -1109,7 +1136,7 @@ libft/ft_strcpy.i: libft/ft_strcpy.c.i
 
 # target to preprocess a source file
 libft/ft_strcpy.c.i:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_strcpy.c.i
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_strcpy.c.i
 .PHONY : libft/ft_strcpy.c.i
 
 libft/ft_strcpy.s: libft/ft_strcpy.c.s
@@ -1118,7 +1145,7 @@ libft/ft_strcpy.s: libft/ft_strcpy.c.s
 
 # target to generate assembly for a file
 libft/ft_strcpy.c.s:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_strcpy.c.s
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_strcpy.c.s
 .PHONY : libft/ft_strcpy.c.s
 
 libft/ft_strdel.obj: libft/ft_strdel.c.obj
@@ -1127,7 +1154,7 @@ libft/ft_strdel.obj: libft/ft_strdel.c.obj
 
 # target to build an object file
 libft/ft_strdel.c.obj:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_strdel.c.obj
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_strdel.c.obj
 .PHONY : libft/ft_strdel.c.obj
 
 libft/ft_strdel.i: libft/ft_strdel.c.i
@@ -1136,7 +1163,7 @@ libft/ft_strdel.i: libft/ft_strdel.c.i
 
 # target to preprocess a source file
 libft/ft_strdel.c.i:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_strdel.c.i
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_strdel.c.i
 .PHONY : libft/ft_strdel.c.i
 
 libft/ft_strdel.s: libft/ft_strdel.c.s
@@ -1145,7 +1172,7 @@ libft/ft_strdel.s: libft/ft_strdel.c.s
 
 # target to generate assembly for a file
 libft/ft_strdel.c.s:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_strdel.c.s
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_strdel.c.s
 .PHONY : libft/ft_strdel.c.s
 
 libft/ft_strdup.obj: libft/ft_strdup.c.obj
@@ -1154,7 +1181,7 @@ libft/ft_strdup.obj: libft/ft_strdup.c.obj
 
 # target to build an object file
 libft/ft_strdup.c.obj:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_strdup.c.obj
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_strdup.c.obj
 .PHONY : libft/ft_strdup.c.obj
 
 libft/ft_strdup.i: libft/ft_strdup.c.i
@@ -1163,7 +1190,7 @@ libft/ft_strdup.i: libft/ft_strdup.c.i
 
 # target to preprocess a source file
 libft/ft_strdup.c.i:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_strdup.c.i
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_strdup.c.i
 .PHONY : libft/ft_strdup.c.i
 
 libft/ft_strdup.s: libft/ft_strdup.c.s
@@ -1172,7 +1199,7 @@ libft/ft_strdup.s: libft/ft_strdup.c.s
 
 # target to generate assembly for a file
 libft/ft_strdup.c.s:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_strdup.c.s
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_strdup.c.s
 .PHONY : libft/ft_strdup.c.s
 
 libft/ft_strequ.obj: libft/ft_strequ.c.obj
@@ -1181,7 +1208,7 @@ libft/ft_strequ.obj: libft/ft_strequ.c.obj
 
 # target to build an object file
 libft/ft_strequ.c.obj:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_strequ.c.obj
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_strequ.c.obj
 .PHONY : libft/ft_strequ.c.obj
 
 libft/ft_strequ.i: libft/ft_strequ.c.i
@@ -1190,7 +1217,7 @@ libft/ft_strequ.i: libft/ft_strequ.c.i
 
 # target to preprocess a source file
 libft/ft_strequ.c.i:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_strequ.c.i
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_strequ.c.i
 .PHONY : libft/ft_strequ.c.i
 
 libft/ft_strequ.s: libft/ft_strequ.c.s
@@ -1199,7 +1226,7 @@ libft/ft_strequ.s: libft/ft_strequ.c.s
 
 # target to generate assembly for a file
 libft/ft_strequ.c.s:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_strequ.c.s
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_strequ.c.s
 .PHONY : libft/ft_strequ.c.s
 
 libft/ft_striter.obj: libft/ft_striter.c.obj
@@ -1208,7 +1235,7 @@ libft/ft_striter.obj: libft/ft_striter.c.obj
 
 # target to build an object file
 libft/ft_striter.c.obj:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_striter.c.obj
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_striter.c.obj
 .PHONY : libft/ft_striter.c.obj
 
 libft/ft_striter.i: libft/ft_striter.c.i
@@ -1217,7 +1244,7 @@ libft/ft_striter.i: libft/ft_striter.c.i
 
 # target to preprocess a source file
 libft/ft_striter.c.i:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_striter.c.i
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_striter.c.i
 .PHONY : libft/ft_striter.c.i
 
 libft/ft_striter.s: libft/ft_striter.c.s
@@ -1226,7 +1253,7 @@ libft/ft_striter.s: libft/ft_striter.c.s
 
 # target to generate assembly for a file
 libft/ft_striter.c.s:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_striter.c.s
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_striter.c.s
 .PHONY : libft/ft_striter.c.s
 
 libft/ft_striteri.obj: libft/ft_striteri.c.obj
@@ -1235,7 +1262,7 @@ libft/ft_striteri.obj: libft/ft_striteri.c.obj
 
 # target to build an object file
 libft/ft_striteri.c.obj:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_striteri.c.obj
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_striteri.c.obj
 .PHONY : libft/ft_striteri.c.obj
 
 libft/ft_striteri.i: libft/ft_striteri.c.i
@@ -1244,7 +1271,7 @@ libft/ft_striteri.i: libft/ft_striteri.c.i
 
 # target to preprocess a source file
 libft/ft_striteri.c.i:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_striteri.c.i
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_striteri.c.i
 .PHONY : libft/ft_striteri.c.i
 
 libft/ft_striteri.s: libft/ft_striteri.c.s
@@ -1253,7 +1280,7 @@ libft/ft_striteri.s: libft/ft_striteri.c.s
 
 # target to generate assembly for a file
 libft/ft_striteri.c.s:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_striteri.c.s
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_striteri.c.s
 .PHONY : libft/ft_striteri.c.s
 
 libft/ft_strjoin.obj: libft/ft_strjoin.c.obj
@@ -1262,7 +1289,7 @@ libft/ft_strjoin.obj: libft/ft_strjoin.c.obj
 
 # target to build an object file
 libft/ft_strjoin.c.obj:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_strjoin.c.obj
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_strjoin.c.obj
 .PHONY : libft/ft_strjoin.c.obj
 
 libft/ft_strjoin.i: libft/ft_strjoin.c.i
@@ -1271,7 +1298,7 @@ libft/ft_strjoin.i: libft/ft_strjoin.c.i
 
 # target to preprocess a source file
 libft/ft_strjoin.c.i:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_strjoin.c.i
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_strjoin.c.i
 .PHONY : libft/ft_strjoin.c.i
 
 libft/ft_strjoin.s: libft/ft_strjoin.c.s
@@ -1280,7 +1307,7 @@ libft/ft_strjoin.s: libft/ft_strjoin.c.s
 
 # target to generate assembly for a file
 libft/ft_strjoin.c.s:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_strjoin.c.s
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_strjoin.c.s
 .PHONY : libft/ft_strjoin.c.s
 
 libft/ft_strlcat.obj: libft/ft_strlcat.c.obj
@@ -1289,7 +1316,7 @@ libft/ft_strlcat.obj: libft/ft_strlcat.c.obj
 
 # target to build an object file
 libft/ft_strlcat.c.obj:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_strlcat.c.obj
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_strlcat.c.obj
 .PHONY : libft/ft_strlcat.c.obj
 
 libft/ft_strlcat.i: libft/ft_strlcat.c.i
@@ -1298,7 +1325,7 @@ libft/ft_strlcat.i: libft/ft_strlcat.c.i
 
 # target to preprocess a source file
 libft/ft_strlcat.c.i:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_strlcat.c.i
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_strlcat.c.i
 .PHONY : libft/ft_strlcat.c.i
 
 libft/ft_strlcat.s: libft/ft_strlcat.c.s
@@ -1307,7 +1334,7 @@ libft/ft_strlcat.s: libft/ft_strlcat.c.s
 
 # target to generate assembly for a file
 libft/ft_strlcat.c.s:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_strlcat.c.s
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_strlcat.c.s
 .PHONY : libft/ft_strlcat.c.s
 
 libft/ft_strlen.obj: libft/ft_strlen.c.obj
@@ -1316,7 +1343,7 @@ libft/ft_strlen.obj: libft/ft_strlen.c.obj
 
 # target to build an object file
 libft/ft_strlen.c.obj:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_strlen.c.obj
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_strlen.c.obj
 .PHONY : libft/ft_strlen.c.obj
 
 libft/ft_strlen.i: libft/ft_strlen.c.i
@@ -1325,7 +1352,7 @@ libft/ft_strlen.i: libft/ft_strlen.c.i
 
 # target to preprocess a source file
 libft/ft_strlen.c.i:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_strlen.c.i
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_strlen.c.i
 .PHONY : libft/ft_strlen.c.i
 
 libft/ft_strlen.s: libft/ft_strlen.c.s
@@ -1334,7 +1361,7 @@ libft/ft_strlen.s: libft/ft_strlen.c.s
 
 # target to generate assembly for a file
 libft/ft_strlen.c.s:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_strlen.c.s
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_strlen.c.s
 .PHONY : libft/ft_strlen.c.s
 
 libft/ft_strmap.obj: libft/ft_strmap.c.obj
@@ -1343,7 +1370,7 @@ libft/ft_strmap.obj: libft/ft_strmap.c.obj
 
 # target to build an object file
 libft/ft_strmap.c.obj:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_strmap.c.obj
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_strmap.c.obj
 .PHONY : libft/ft_strmap.c.obj
 
 libft/ft_strmap.i: libft/ft_strmap.c.i
@@ -1352,7 +1379,7 @@ libft/ft_strmap.i: libft/ft_strmap.c.i
 
 # target to preprocess a source file
 libft/ft_strmap.c.i:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_strmap.c.i
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_strmap.c.i
 .PHONY : libft/ft_strmap.c.i
 
 libft/ft_strmap.s: libft/ft_strmap.c.s
@@ -1361,7 +1388,7 @@ libft/ft_strmap.s: libft/ft_strmap.c.s
 
 # target to generate assembly for a file
 libft/ft_strmap.c.s:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_strmap.c.s
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_strmap.c.s
 .PHONY : libft/ft_strmap.c.s
 
 libft/ft_strmapi.obj: libft/ft_strmapi.c.obj
@@ -1370,7 +1397,7 @@ libft/ft_strmapi.obj: libft/ft_strmapi.c.obj
 
 # target to build an object file
 libft/ft_strmapi.c.obj:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_strmapi.c.obj
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_strmapi.c.obj
 .PHONY : libft/ft_strmapi.c.obj
 
 libft/ft_strmapi.i: libft/ft_strmapi.c.i
@@ -1379,7 +1406,7 @@ libft/ft_strmapi.i: libft/ft_strmapi.c.i
 
 # target to preprocess a source file
 libft/ft_strmapi.c.i:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_strmapi.c.i
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_strmapi.c.i
 .PHONY : libft/ft_strmapi.c.i
 
 libft/ft_strmapi.s: libft/ft_strmapi.c.s
@@ -1388,7 +1415,7 @@ libft/ft_strmapi.s: libft/ft_strmapi.c.s
 
 # target to generate assembly for a file
 libft/ft_strmapi.c.s:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_strmapi.c.s
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_strmapi.c.s
 .PHONY : libft/ft_strmapi.c.s
 
 libft/ft_strncat.obj: libft/ft_strncat.c.obj
@@ -1397,7 +1424,7 @@ libft/ft_strncat.obj: libft/ft_strncat.c.obj
 
 # target to build an object file
 libft/ft_strncat.c.obj:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_strncat.c.obj
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_strncat.c.obj
 .PHONY : libft/ft_strncat.c.obj
 
 libft/ft_strncat.i: libft/ft_strncat.c.i
@@ -1406,7 +1433,7 @@ libft/ft_strncat.i: libft/ft_strncat.c.i
 
 # target to preprocess a source file
 libft/ft_strncat.c.i:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_strncat.c.i
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_strncat.c.i
 .PHONY : libft/ft_strncat.c.i
 
 libft/ft_strncat.s: libft/ft_strncat.c.s
@@ -1415,7 +1442,7 @@ libft/ft_strncat.s: libft/ft_strncat.c.s
 
 # target to generate assembly for a file
 libft/ft_strncat.c.s:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_strncat.c.s
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_strncat.c.s
 .PHONY : libft/ft_strncat.c.s
 
 libft/ft_strncmp.obj: libft/ft_strncmp.c.obj
@@ -1424,7 +1451,7 @@ libft/ft_strncmp.obj: libft/ft_strncmp.c.obj
 
 # target to build an object file
 libft/ft_strncmp.c.obj:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_strncmp.c.obj
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_strncmp.c.obj
 .PHONY : libft/ft_strncmp.c.obj
 
 libft/ft_strncmp.i: libft/ft_strncmp.c.i
@@ -1433,7 +1460,7 @@ libft/ft_strncmp.i: libft/ft_strncmp.c.i
 
 # target to preprocess a source file
 libft/ft_strncmp.c.i:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_strncmp.c.i
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_strncmp.c.i
 .PHONY : libft/ft_strncmp.c.i
 
 libft/ft_strncmp.s: libft/ft_strncmp.c.s
@@ -1442,7 +1469,7 @@ libft/ft_strncmp.s: libft/ft_strncmp.c.s
 
 # target to generate assembly for a file
 libft/ft_strncmp.c.s:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_strncmp.c.s
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_strncmp.c.s
 .PHONY : libft/ft_strncmp.c.s
 
 libft/ft_strncpy.obj: libft/ft_strncpy.c.obj
@@ -1451,7 +1478,7 @@ libft/ft_strncpy.obj: libft/ft_strncpy.c.obj
 
 # target to build an object file
 libft/ft_strncpy.c.obj:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_strncpy.c.obj
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_strncpy.c.obj
 .PHONY : libft/ft_strncpy.c.obj
 
 libft/ft_strncpy.i: libft/ft_strncpy.c.i
@@ -1460,7 +1487,7 @@ libft/ft_strncpy.i: libft/ft_strncpy.c.i
 
 # target to preprocess a source file
 libft/ft_strncpy.c.i:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_strncpy.c.i
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_strncpy.c.i
 .PHONY : libft/ft_strncpy.c.i
 
 libft/ft_strncpy.s: libft/ft_strncpy.c.s
@@ -1469,7 +1496,7 @@ libft/ft_strncpy.s: libft/ft_strncpy.c.s
 
 # target to generate assembly for a file
 libft/ft_strncpy.c.s:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_strncpy.c.s
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_strncpy.c.s
 .PHONY : libft/ft_strncpy.c.s
 
 libft/ft_strnequ.obj: libft/ft_strnequ.c.obj
@@ -1478,7 +1505,7 @@ libft/ft_strnequ.obj: libft/ft_strnequ.c.obj
 
 # target to build an object file
 libft/ft_strnequ.c.obj:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_strnequ.c.obj
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_strnequ.c.obj
 .PHONY : libft/ft_strnequ.c.obj
 
 libft/ft_strnequ.i: libft/ft_strnequ.c.i
@@ -1487,7 +1514,7 @@ libft/ft_strnequ.i: libft/ft_strnequ.c.i
 
 # target to preprocess a source file
 libft/ft_strnequ.c.i:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_strnequ.c.i
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_strnequ.c.i
 .PHONY : libft/ft_strnequ.c.i
 
 libft/ft_strnequ.s: libft/ft_strnequ.c.s
@@ -1496,7 +1523,7 @@ libft/ft_strnequ.s: libft/ft_strnequ.c.s
 
 # target to generate assembly for a file
 libft/ft_strnequ.c.s:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_strnequ.c.s
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_strnequ.c.s
 .PHONY : libft/ft_strnequ.c.s
 
 libft/ft_strnew.obj: libft/ft_strnew.c.obj
@@ -1505,7 +1532,7 @@ libft/ft_strnew.obj: libft/ft_strnew.c.obj
 
 # target to build an object file
 libft/ft_strnew.c.obj:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_strnew.c.obj
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_strnew.c.obj
 .PHONY : libft/ft_strnew.c.obj
 
 libft/ft_strnew.i: libft/ft_strnew.c.i
@@ -1514,7 +1541,7 @@ libft/ft_strnew.i: libft/ft_strnew.c.i
 
 # target to preprocess a source file
 libft/ft_strnew.c.i:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_strnew.c.i
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_strnew.c.i
 .PHONY : libft/ft_strnew.c.i
 
 libft/ft_strnew.s: libft/ft_strnew.c.s
@@ -1523,7 +1550,7 @@ libft/ft_strnew.s: libft/ft_strnew.c.s
 
 # target to generate assembly for a file
 libft/ft_strnew.c.s:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_strnew.c.s
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_strnew.c.s
 .PHONY : libft/ft_strnew.c.s
 
 libft/ft_strnstr.obj: libft/ft_strnstr.c.obj
@@ -1532,7 +1559,7 @@ libft/ft_strnstr.obj: libft/ft_strnstr.c.obj
 
 # target to build an object file
 libft/ft_strnstr.c.obj:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_strnstr.c.obj
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_strnstr.c.obj
 .PHONY : libft/ft_strnstr.c.obj
 
 libft/ft_strnstr.i: libft/ft_strnstr.c.i
@@ -1541,7 +1568,7 @@ libft/ft_strnstr.i: libft/ft_strnstr.c.i
 
 # target to preprocess a source file
 libft/ft_strnstr.c.i:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_strnstr.c.i
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_strnstr.c.i
 .PHONY : libft/ft_strnstr.c.i
 
 libft/ft_strnstr.s: libft/ft_strnstr.c.s
@@ -1550,7 +1577,7 @@ libft/ft_strnstr.s: libft/ft_strnstr.c.s
 
 # target to generate assembly for a file
 libft/ft_strnstr.c.s:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_strnstr.c.s
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_strnstr.c.s
 .PHONY : libft/ft_strnstr.c.s
 
 libft/ft_strrchr.obj: libft/ft_strrchr.c.obj
@@ -1559,7 +1586,7 @@ libft/ft_strrchr.obj: libft/ft_strrchr.c.obj
 
 # target to build an object file
 libft/ft_strrchr.c.obj:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_strrchr.c.obj
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_strrchr.c.obj
 .PHONY : libft/ft_strrchr.c.obj
 
 libft/ft_strrchr.i: libft/ft_strrchr.c.i
@@ -1568,7 +1595,7 @@ libft/ft_strrchr.i: libft/ft_strrchr.c.i
 
 # target to preprocess a source file
 libft/ft_strrchr.c.i:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_strrchr.c.i
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_strrchr.c.i
 .PHONY : libft/ft_strrchr.c.i
 
 libft/ft_strrchr.s: libft/ft_strrchr.c.s
@@ -1577,7 +1604,7 @@ libft/ft_strrchr.s: libft/ft_strrchr.c.s
 
 # target to generate assembly for a file
 libft/ft_strrchr.c.s:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_strrchr.c.s
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_strrchr.c.s
 .PHONY : libft/ft_strrchr.c.s
 
 libft/ft_strsplit.obj: libft/ft_strsplit.c.obj
@@ -1586,7 +1613,7 @@ libft/ft_strsplit.obj: libft/ft_strsplit.c.obj
 
 # target to build an object file
 libft/ft_strsplit.c.obj:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_strsplit.c.obj
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_strsplit.c.obj
 .PHONY : libft/ft_strsplit.c.obj
 
 libft/ft_strsplit.i: libft/ft_strsplit.c.i
@@ -1595,7 +1622,7 @@ libft/ft_strsplit.i: libft/ft_strsplit.c.i
 
 # target to preprocess a source file
 libft/ft_strsplit.c.i:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_strsplit.c.i
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_strsplit.c.i
 .PHONY : libft/ft_strsplit.c.i
 
 libft/ft_strsplit.s: libft/ft_strsplit.c.s
@@ -1604,7 +1631,7 @@ libft/ft_strsplit.s: libft/ft_strsplit.c.s
 
 # target to generate assembly for a file
 libft/ft_strsplit.c.s:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_strsplit.c.s
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_strsplit.c.s
 .PHONY : libft/ft_strsplit.c.s
 
 libft/ft_strstr.obj: libft/ft_strstr.c.obj
@@ -1613,7 +1640,7 @@ libft/ft_strstr.obj: libft/ft_strstr.c.obj
 
 # target to build an object file
 libft/ft_strstr.c.obj:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_strstr.c.obj
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_strstr.c.obj
 .PHONY : libft/ft_strstr.c.obj
 
 libft/ft_strstr.i: libft/ft_strstr.c.i
@@ -1622,7 +1649,7 @@ libft/ft_strstr.i: libft/ft_strstr.c.i
 
 # target to preprocess a source file
 libft/ft_strstr.c.i:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_strstr.c.i
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_strstr.c.i
 .PHONY : libft/ft_strstr.c.i
 
 libft/ft_strstr.s: libft/ft_strstr.c.s
@@ -1631,7 +1658,7 @@ libft/ft_strstr.s: libft/ft_strstr.c.s
 
 # target to generate assembly for a file
 libft/ft_strstr.c.s:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_strstr.c.s
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_strstr.c.s
 .PHONY : libft/ft_strstr.c.s
 
 libft/ft_strsub.obj: libft/ft_strsub.c.obj
@@ -1640,7 +1667,7 @@ libft/ft_strsub.obj: libft/ft_strsub.c.obj
 
 # target to build an object file
 libft/ft_strsub.c.obj:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_strsub.c.obj
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_strsub.c.obj
 .PHONY : libft/ft_strsub.c.obj
 
 libft/ft_strsub.i: libft/ft_strsub.c.i
@@ -1649,7 +1676,7 @@ libft/ft_strsub.i: libft/ft_strsub.c.i
 
 # target to preprocess a source file
 libft/ft_strsub.c.i:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_strsub.c.i
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_strsub.c.i
 .PHONY : libft/ft_strsub.c.i
 
 libft/ft_strsub.s: libft/ft_strsub.c.s
@@ -1658,7 +1685,7 @@ libft/ft_strsub.s: libft/ft_strsub.c.s
 
 # target to generate assembly for a file
 libft/ft_strsub.c.s:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_strsub.c.s
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_strsub.c.s
 .PHONY : libft/ft_strsub.c.s
 
 libft/ft_strtrim.obj: libft/ft_strtrim.c.obj
@@ -1667,7 +1694,7 @@ libft/ft_strtrim.obj: libft/ft_strtrim.c.obj
 
 # target to build an object file
 libft/ft_strtrim.c.obj:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_strtrim.c.obj
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_strtrim.c.obj
 .PHONY : libft/ft_strtrim.c.obj
 
 libft/ft_strtrim.i: libft/ft_strtrim.c.i
@@ -1676,7 +1703,7 @@ libft/ft_strtrim.i: libft/ft_strtrim.c.i
 
 # target to preprocess a source file
 libft/ft_strtrim.c.i:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_strtrim.c.i
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_strtrim.c.i
 .PHONY : libft/ft_strtrim.c.i
 
 libft/ft_strtrim.s: libft/ft_strtrim.c.s
@@ -1685,7 +1712,7 @@ libft/ft_strtrim.s: libft/ft_strtrim.c.s
 
 # target to generate assembly for a file
 libft/ft_strtrim.c.s:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_strtrim.c.s
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_strtrim.c.s
 .PHONY : libft/ft_strtrim.c.s
 
 libft/ft_tolower.obj: libft/ft_tolower.c.obj
@@ -1694,7 +1721,7 @@ libft/ft_tolower.obj: libft/ft_tolower.c.obj
 
 # target to build an object file
 libft/ft_tolower.c.obj:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_tolower.c.obj
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_tolower.c.obj
 .PHONY : libft/ft_tolower.c.obj
 
 libft/ft_tolower.i: libft/ft_tolower.c.i
@@ -1703,7 +1730,7 @@ libft/ft_tolower.i: libft/ft_tolower.c.i
 
 # target to preprocess a source file
 libft/ft_tolower.c.i:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_tolower.c.i
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_tolower.c.i
 .PHONY : libft/ft_tolower.c.i
 
 libft/ft_tolower.s: libft/ft_tolower.c.s
@@ -1712,7 +1739,7 @@ libft/ft_tolower.s: libft/ft_tolower.c.s
 
 # target to generate assembly for a file
 libft/ft_tolower.c.s:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_tolower.c.s
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_tolower.c.s
 .PHONY : libft/ft_tolower.c.s
 
 libft/ft_toupper.obj: libft/ft_toupper.c.obj
@@ -1721,7 +1748,7 @@ libft/ft_toupper.obj: libft/ft_toupper.c.obj
 
 # target to build an object file
 libft/ft_toupper.c.obj:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_toupper.c.obj
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_toupper.c.obj
 .PHONY : libft/ft_toupper.c.obj
 
 libft/ft_toupper.i: libft/ft_toupper.c.i
@@ -1730,7 +1757,7 @@ libft/ft_toupper.i: libft/ft_toupper.c.i
 
 # target to preprocess a source file
 libft/ft_toupper.c.i:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_toupper.c.i
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_toupper.c.i
 .PHONY : libft/ft_toupper.c.i
 
 libft/ft_toupper.s: libft/ft_toupper.c.s
@@ -1739,7 +1766,7 @@ libft/ft_toupper.s: libft/ft_toupper.c.s
 
 # target to generate assembly for a file
 libft/ft_toupper.c.s:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/ft_toupper.c.s
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/ft_toupper.c.s
 .PHONY : libft/ft_toupper.c.s
 
 libft/gnl.obj: libft/gnl.c.obj
@@ -1748,7 +1775,7 @@ libft/gnl.obj: libft/gnl.c.obj
 
 # target to build an object file
 libft/gnl.c.obj:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/gnl.c.obj
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/gnl.c.obj
 .PHONY : libft/gnl.c.obj
 
 libft/gnl.i: libft/gnl.c.i
@@ -1757,7 +1784,7 @@ libft/gnl.i: libft/gnl.c.i
 
 # target to preprocess a source file
 libft/gnl.c.i:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/gnl.c.i
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/gnl.c.i
 .PHONY : libft/gnl.c.i
 
 libft/gnl.s: libft/gnl.c.s
@@ -1766,7 +1793,7 @@ libft/gnl.s: libft/gnl.c.s
 
 # target to generate assembly for a file
 libft/gnl.c.s:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/libft/gnl.c.s
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/libft/gnl.c.s
 .PHONY : libft/gnl.c.s
 
 main.obj: main.c.obj
@@ -1775,7 +1802,7 @@ main.obj: main.c.obj
 
 # target to build an object file
 main.c.obj:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/main.c.obj
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/main.c.obj
 .PHONY : main.c.obj
 
 main.i: main.c.i
@@ -1784,7 +1811,7 @@ main.i: main.c.i
 
 # target to preprocess a source file
 main.c.i:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/main.c.i
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/main.c.i
 .PHONY : main.c.i
 
 main.s: main.c.s
@@ -1793,8 +1820,62 @@ main.s: main.c.s
 
 # target to generate assembly for a file
 main.c.s:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/main.c.s
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/main.c.s
 .PHONY : main.c.s
+
+nullify.obj: nullify.c.obj
+
+.PHONY : nullify.obj
+
+# target to build an object file
+nullify.c.obj:
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/nullify.c.obj
+.PHONY : nullify.c.obj
+
+nullify.i: nullify.c.i
+
+.PHONY : nullify.i
+
+# target to preprocess a source file
+nullify.c.i:
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/nullify.c.i
+.PHONY : nullify.c.i
+
+nullify.s: nullify.c.s
+
+.PHONY : nullify.s
+
+# target to generate assembly for a file
+nullify.c.s:
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/nullify.c.s
+.PHONY : nullify.c.s
+
+parcing.obj: parcing.c.obj
+
+.PHONY : parcing.obj
+
+# target to build an object file
+parcing.c.obj:
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/parcing.c.obj
+.PHONY : parcing.c.obj
+
+parcing.i: parcing.c.i
+
+.PHONY : parcing.i
+
+# target to preprocess a source file
+parcing.c.i:
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/parcing.c.i
+.PHONY : parcing.c.i
+
+parcing.s: parcing.c.s
+
+.PHONY : parcing.s
+
+# target to generate assembly for a file
+parcing.c.s:
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/parcing.c.s
+.PHONY : parcing.c.s
 
 src/binary.obj: src/binary.c.obj
 
@@ -1802,7 +1883,7 @@ src/binary.obj: src/binary.c.obj
 
 # target to build an object file
 src/binary.c.obj:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/src/binary.c.obj
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/src/binary.c.obj
 .PHONY : src/binary.c.obj
 
 src/binary.i: src/binary.c.i
@@ -1811,7 +1892,7 @@ src/binary.i: src/binary.c.i
 
 # target to preprocess a source file
 src/binary.c.i:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/src/binary.c.i
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/src/binary.c.i
 .PHONY : src/binary.c.i
 
 src/binary.s: src/binary.c.s
@@ -1820,7 +1901,7 @@ src/binary.s: src/binary.c.s
 
 # target to generate assembly for a file
 src/binary.c.s:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/src/binary.c.s
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/src/binary.c.s
 .PHONY : src/binary.c.s
 
 src/check_format.obj: src/check_format.c.obj
@@ -1829,7 +1910,7 @@ src/check_format.obj: src/check_format.c.obj
 
 # target to build an object file
 src/check_format.c.obj:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/src/check_format.c.obj
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/src/check_format.c.obj
 .PHONY : src/check_format.c.obj
 
 src/check_format.i: src/check_format.c.i
@@ -1838,7 +1919,7 @@ src/check_format.i: src/check_format.c.i
 
 # target to preprocess a source file
 src/check_format.c.i:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/src/check_format.c.i
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/src/check_format.c.i
 .PHONY : src/check_format.c.i
 
 src/check_format.s: src/check_format.c.s
@@ -1847,7 +1928,7 @@ src/check_format.s: src/check_format.c.s
 
 # target to generate assembly for a file
 src/check_format.c.s:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/src/check_format.c.s
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/src/check_format.c.s
 .PHONY : src/check_format.c.s
 
 src/common_functions.obj: src/common_functions.c.obj
@@ -1856,7 +1937,7 @@ src/common_functions.obj: src/common_functions.c.obj
 
 # target to build an object file
 src/common_functions.c.obj:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/src/common_functions.c.obj
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/src/common_functions.c.obj
 .PHONY : src/common_functions.c.obj
 
 src/common_functions.i: src/common_functions.c.i
@@ -1865,7 +1946,7 @@ src/common_functions.i: src/common_functions.c.i
 
 # target to preprocess a source file
 src/common_functions.c.i:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/src/common_functions.c.i
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/src/common_functions.c.i
 .PHONY : src/common_functions.c.i
 
 src/common_functions.s: src/common_functions.c.s
@@ -1874,7 +1955,7 @@ src/common_functions.s: src/common_functions.c.s
 
 # target to generate assembly for a file
 src/common_functions.c.s:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/src/common_functions.c.s
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/src/common_functions.c.s
 .PHONY : src/common_functions.c.s
 
 src/count_length.obj: src/count_length.c.obj
@@ -1883,7 +1964,7 @@ src/count_length.obj: src/count_length.c.obj
 
 # target to build an object file
 src/count_length.c.obj:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/src/count_length.c.obj
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/src/count_length.c.obj
 .PHONY : src/count_length.c.obj
 
 src/count_length.i: src/count_length.c.i
@@ -1892,7 +1973,7 @@ src/count_length.i: src/count_length.c.i
 
 # target to preprocess a source file
 src/count_length.c.i:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/src/count_length.c.i
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/src/count_length.c.i
 .PHONY : src/count_length.c.i
 
 src/count_length.s: src/count_length.c.s
@@ -1901,7 +1982,7 @@ src/count_length.s: src/count_length.c.s
 
 # target to generate assembly for a file
 src/count_length.c.s:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/src/count_length.c.s
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/src/count_length.c.s
 .PHONY : src/count_length.c.s
 
 src/format_percent.obj: src/format_percent.c.obj
@@ -1910,7 +1991,7 @@ src/format_percent.obj: src/format_percent.c.obj
 
 # target to build an object file
 src/format_percent.c.obj:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/src/format_percent.c.obj
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/src/format_percent.c.obj
 .PHONY : src/format_percent.c.obj
 
 src/format_percent.i: src/format_percent.c.i
@@ -1919,7 +2000,7 @@ src/format_percent.i: src/format_percent.c.i
 
 # target to preprocess a source file
 src/format_percent.c.i:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/src/format_percent.c.i
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/src/format_percent.c.i
 .PHONY : src/format_percent.c.i
 
 src/format_percent.s: src/format_percent.c.s
@@ -1928,7 +2009,7 @@ src/format_percent.s: src/format_percent.c.s
 
 # target to generate assembly for a file
 src/format_percent.c.s:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/src/format_percent.c.s
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/src/format_percent.c.s
 .PHONY : src/format_percent.c.s
 
 src/format_print_c.obj: src/format_print_c.c.obj
@@ -1937,7 +2018,7 @@ src/format_print_c.obj: src/format_print_c.c.obj
 
 # target to build an object file
 src/format_print_c.c.obj:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/src/format_print_c.c.obj
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/src/format_print_c.c.obj
 .PHONY : src/format_print_c.c.obj
 
 src/format_print_c.i: src/format_print_c.c.i
@@ -1946,7 +2027,7 @@ src/format_print_c.i: src/format_print_c.c.i
 
 # target to preprocess a source file
 src/format_print_c.c.i:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/src/format_print_c.c.i
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/src/format_print_c.c.i
 .PHONY : src/format_print_c.c.i
 
 src/format_print_c.s: src/format_print_c.c.s
@@ -1955,7 +2036,7 @@ src/format_print_c.s: src/format_print_c.c.s
 
 # target to generate assembly for a file
 src/format_print_c.c.s:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/src/format_print_c.c.s
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/src/format_print_c.c.s
 .PHONY : src/format_print_c.c.s
 
 src/format_print_di.obj: src/format_print_di.c.obj
@@ -1964,7 +2045,7 @@ src/format_print_di.obj: src/format_print_di.c.obj
 
 # target to build an object file
 src/format_print_di.c.obj:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/src/format_print_di.c.obj
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/src/format_print_di.c.obj
 .PHONY : src/format_print_di.c.obj
 
 src/format_print_di.i: src/format_print_di.c.i
@@ -1973,7 +2054,7 @@ src/format_print_di.i: src/format_print_di.c.i
 
 # target to preprocess a source file
 src/format_print_di.c.i:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/src/format_print_di.c.i
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/src/format_print_di.c.i
 .PHONY : src/format_print_di.c.i
 
 src/format_print_di.s: src/format_print_di.c.s
@@ -1982,7 +2063,7 @@ src/format_print_di.s: src/format_print_di.c.s
 
 # target to generate assembly for a file
 src/format_print_di.c.s:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/src/format_print_di.c.s
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/src/format_print_di.c.s
 .PHONY : src/format_print_di.c.s
 
 src/format_print_di_extra.obj: src/format_print_di_extra.c.obj
@@ -1991,7 +2072,7 @@ src/format_print_di_extra.obj: src/format_print_di_extra.c.obj
 
 # target to build an object file
 src/format_print_di_extra.c.obj:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/src/format_print_di_extra.c.obj
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/src/format_print_di_extra.c.obj
 .PHONY : src/format_print_di_extra.c.obj
 
 src/format_print_di_extra.i: src/format_print_di_extra.c.i
@@ -2000,7 +2081,7 @@ src/format_print_di_extra.i: src/format_print_di_extra.c.i
 
 # target to preprocess a source file
 src/format_print_di_extra.c.i:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/src/format_print_di_extra.c.i
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/src/format_print_di_extra.c.i
 .PHONY : src/format_print_di_extra.c.i
 
 src/format_print_di_extra.s: src/format_print_di_extra.c.s
@@ -2009,7 +2090,7 @@ src/format_print_di_extra.s: src/format_print_di_extra.c.s
 
 # target to generate assembly for a file
 src/format_print_di_extra.c.s:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/src/format_print_di_extra.c.s
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/src/format_print_di_extra.c.s
 .PHONY : src/format_print_di_extra.c.s
 
 src/format_print_p.obj: src/format_print_p.c.obj
@@ -2018,7 +2099,7 @@ src/format_print_p.obj: src/format_print_p.c.obj
 
 # target to build an object file
 src/format_print_p.c.obj:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/src/format_print_p.c.obj
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/src/format_print_p.c.obj
 .PHONY : src/format_print_p.c.obj
 
 src/format_print_p.i: src/format_print_p.c.i
@@ -2027,7 +2108,7 @@ src/format_print_p.i: src/format_print_p.c.i
 
 # target to preprocess a source file
 src/format_print_p.c.i:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/src/format_print_p.c.i
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/src/format_print_p.c.i
 .PHONY : src/format_print_p.c.i
 
 src/format_print_p.s: src/format_print_p.c.s
@@ -2036,7 +2117,7 @@ src/format_print_p.s: src/format_print_p.c.s
 
 # target to generate assembly for a file
 src/format_print_p.c.s:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/src/format_print_p.c.s
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/src/format_print_p.c.s
 .PHONY : src/format_print_p.c.s
 
 src/format_print_p_extra.obj: src/format_print_p_extra.c.obj
@@ -2045,7 +2126,7 @@ src/format_print_p_extra.obj: src/format_print_p_extra.c.obj
 
 # target to build an object file
 src/format_print_p_extra.c.obj:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/src/format_print_p_extra.c.obj
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/src/format_print_p_extra.c.obj
 .PHONY : src/format_print_p_extra.c.obj
 
 src/format_print_p_extra.i: src/format_print_p_extra.c.i
@@ -2054,7 +2135,7 @@ src/format_print_p_extra.i: src/format_print_p_extra.c.i
 
 # target to preprocess a source file
 src/format_print_p_extra.c.i:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/src/format_print_p_extra.c.i
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/src/format_print_p_extra.c.i
 .PHONY : src/format_print_p_extra.c.i
 
 src/format_print_p_extra.s: src/format_print_p_extra.c.s
@@ -2063,7 +2144,7 @@ src/format_print_p_extra.s: src/format_print_p_extra.c.s
 
 # target to generate assembly for a file
 src/format_print_p_extra.c.s:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/src/format_print_p_extra.c.s
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/src/format_print_p_extra.c.s
 .PHONY : src/format_print_p_extra.c.s
 
 src/format_print_str.obj: src/format_print_str.c.obj
@@ -2072,7 +2153,7 @@ src/format_print_str.obj: src/format_print_str.c.obj
 
 # target to build an object file
 src/format_print_str.c.obj:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/src/format_print_str.c.obj
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/src/format_print_str.c.obj
 .PHONY : src/format_print_str.c.obj
 
 src/format_print_str.i: src/format_print_str.c.i
@@ -2081,7 +2162,7 @@ src/format_print_str.i: src/format_print_str.c.i
 
 # target to preprocess a source file
 src/format_print_str.c.i:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/src/format_print_str.c.i
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/src/format_print_str.c.i
 .PHONY : src/format_print_str.c.i
 
 src/format_print_str.s: src/format_print_str.c.s
@@ -2090,7 +2171,7 @@ src/format_print_str.s: src/format_print_str.c.s
 
 # target to generate assembly for a file
 src/format_print_str.c.s:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/src/format_print_str.c.s
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/src/format_print_str.c.s
 .PHONY : src/format_print_str.c.s
 
 src/format_print_u.obj: src/format_print_u.c.obj
@@ -2099,7 +2180,7 @@ src/format_print_u.obj: src/format_print_u.c.obj
 
 # target to build an object file
 src/format_print_u.c.obj:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/src/format_print_u.c.obj
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/src/format_print_u.c.obj
 .PHONY : src/format_print_u.c.obj
 
 src/format_print_u.i: src/format_print_u.c.i
@@ -2108,7 +2189,7 @@ src/format_print_u.i: src/format_print_u.c.i
 
 # target to preprocess a source file
 src/format_print_u.c.i:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/src/format_print_u.c.i
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/src/format_print_u.c.i
 .PHONY : src/format_print_u.c.i
 
 src/format_print_u.s: src/format_print_u.c.s
@@ -2117,7 +2198,7 @@ src/format_print_u.s: src/format_print_u.c.s
 
 # target to generate assembly for a file
 src/format_print_u.c.s:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/src/format_print_u.c.s
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/src/format_print_u.c.s
 .PHONY : src/format_print_u.c.s
 
 src/format_print_u_four.obj: src/format_print_u_four.c.obj
@@ -2126,7 +2207,7 @@ src/format_print_u_four.obj: src/format_print_u_four.c.obj
 
 # target to build an object file
 src/format_print_u_four.c.obj:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/src/format_print_u_four.c.obj
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/src/format_print_u_four.c.obj
 .PHONY : src/format_print_u_four.c.obj
 
 src/format_print_u_four.i: src/format_print_u_four.c.i
@@ -2135,7 +2216,7 @@ src/format_print_u_four.i: src/format_print_u_four.c.i
 
 # target to preprocess a source file
 src/format_print_u_four.c.i:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/src/format_print_u_four.c.i
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/src/format_print_u_four.c.i
 .PHONY : src/format_print_u_four.c.i
 
 src/format_print_u_four.s: src/format_print_u_four.c.s
@@ -2144,7 +2225,7 @@ src/format_print_u_four.s: src/format_print_u_four.c.s
 
 # target to generate assembly for a file
 src/format_print_u_four.c.s:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/src/format_print_u_four.c.s
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/src/format_print_u_four.c.s
 .PHONY : src/format_print_u_four.c.s
 
 src/format_print_u_one.obj: src/format_print_u_one.c.obj
@@ -2153,7 +2234,7 @@ src/format_print_u_one.obj: src/format_print_u_one.c.obj
 
 # target to build an object file
 src/format_print_u_one.c.obj:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/src/format_print_u_one.c.obj
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/src/format_print_u_one.c.obj
 .PHONY : src/format_print_u_one.c.obj
 
 src/format_print_u_one.i: src/format_print_u_one.c.i
@@ -2162,7 +2243,7 @@ src/format_print_u_one.i: src/format_print_u_one.c.i
 
 # target to preprocess a source file
 src/format_print_u_one.c.i:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/src/format_print_u_one.c.i
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/src/format_print_u_one.c.i
 .PHONY : src/format_print_u_one.c.i
 
 src/format_print_u_one.s: src/format_print_u_one.c.s
@@ -2171,7 +2252,7 @@ src/format_print_u_one.s: src/format_print_u_one.c.s
 
 # target to generate assembly for a file
 src/format_print_u_one.c.s:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/src/format_print_u_one.c.s
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/src/format_print_u_one.c.s
 .PHONY : src/format_print_u_one.c.s
 
 src/format_print_u_three.obj: src/format_print_u_three.c.obj
@@ -2180,7 +2261,7 @@ src/format_print_u_three.obj: src/format_print_u_three.c.obj
 
 # target to build an object file
 src/format_print_u_three.c.obj:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/src/format_print_u_three.c.obj
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/src/format_print_u_three.c.obj
 .PHONY : src/format_print_u_three.c.obj
 
 src/format_print_u_three.i: src/format_print_u_three.c.i
@@ -2189,7 +2270,7 @@ src/format_print_u_three.i: src/format_print_u_three.c.i
 
 # target to preprocess a source file
 src/format_print_u_three.c.i:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/src/format_print_u_three.c.i
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/src/format_print_u_three.c.i
 .PHONY : src/format_print_u_three.c.i
 
 src/format_print_u_three.s: src/format_print_u_three.c.s
@@ -2198,7 +2279,7 @@ src/format_print_u_three.s: src/format_print_u_three.c.s
 
 # target to generate assembly for a file
 src/format_print_u_three.c.s:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/src/format_print_u_three.c.s
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/src/format_print_u_three.c.s
 .PHONY : src/format_print_u_three.c.s
 
 src/format_print_u_two.obj: src/format_print_u_two.c.obj
@@ -2207,7 +2288,7 @@ src/format_print_u_two.obj: src/format_print_u_two.c.obj
 
 # target to build an object file
 src/format_print_u_two.c.obj:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/src/format_print_u_two.c.obj
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/src/format_print_u_two.c.obj
 .PHONY : src/format_print_u_two.c.obj
 
 src/format_print_u_two.i: src/format_print_u_two.c.i
@@ -2216,7 +2297,7 @@ src/format_print_u_two.i: src/format_print_u_two.c.i
 
 # target to preprocess a source file
 src/format_print_u_two.c.i:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/src/format_print_u_two.c.i
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/src/format_print_u_two.c.i
 .PHONY : src/format_print_u_two.c.i
 
 src/format_print_u_two.s: src/format_print_u_two.c.s
@@ -2225,7 +2306,7 @@ src/format_print_u_two.s: src/format_print_u_two.c.s
 
 # target to generate assembly for a file
 src/format_print_u_two.c.s:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/src/format_print_u_two.c.s
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/src/format_print_u_two.c.s
 .PHONY : src/format_print_u_two.c.s
 
 src/ft_float.obj: src/ft_float.c.obj
@@ -2234,7 +2315,7 @@ src/ft_float.obj: src/ft_float.c.obj
 
 # target to build an object file
 src/ft_float.c.obj:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/src/ft_float.c.obj
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/src/ft_float.c.obj
 .PHONY : src/ft_float.c.obj
 
 src/ft_float.i: src/ft_float.c.i
@@ -2243,7 +2324,7 @@ src/ft_float.i: src/ft_float.c.i
 
 # target to preprocess a source file
 src/ft_float.c.i:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/src/ft_float.c.i
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/src/ft_float.c.i
 .PHONY : src/ft_float.c.i
 
 src/ft_float.s: src/ft_float.c.s
@@ -2252,7 +2333,7 @@ src/ft_float.s: src/ft_float.c.s
 
 # target to generate assembly for a file
 src/ft_float.c.s:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/src/ft_float.c.s
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/src/ft_float.c.s
 .PHONY : src/ft_float.c.s
 
 src/ft_float_one.obj: src/ft_float_one.c.obj
@@ -2261,7 +2342,7 @@ src/ft_float_one.obj: src/ft_float_one.c.obj
 
 # target to build an object file
 src/ft_float_one.c.obj:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/src/ft_float_one.c.obj
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/src/ft_float_one.c.obj
 .PHONY : src/ft_float_one.c.obj
 
 src/ft_float_one.i: src/ft_float_one.c.i
@@ -2270,7 +2351,7 @@ src/ft_float_one.i: src/ft_float_one.c.i
 
 # target to preprocess a source file
 src/ft_float_one.c.i:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/src/ft_float_one.c.i
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/src/ft_float_one.c.i
 .PHONY : src/ft_float_one.c.i
 
 src/ft_float_one.s: src/ft_float_one.c.s
@@ -2279,7 +2360,7 @@ src/ft_float_one.s: src/ft_float_one.c.s
 
 # target to generate assembly for a file
 src/ft_float_one.c.s:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/src/ft_float_one.c.s
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/src/ft_float_one.c.s
 .PHONY : src/ft_float_one.c.s
 
 src/ft_float_two.obj: src/ft_float_two.c.obj
@@ -2288,7 +2369,7 @@ src/ft_float_two.obj: src/ft_float_two.c.obj
 
 # target to build an object file
 src/ft_float_two.c.obj:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/src/ft_float_two.c.obj
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/src/ft_float_two.c.obj
 .PHONY : src/ft_float_two.c.obj
 
 src/ft_float_two.i: src/ft_float_two.c.i
@@ -2297,7 +2378,7 @@ src/ft_float_two.i: src/ft_float_two.c.i
 
 # target to preprocess a source file
 src/ft_float_two.c.i:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/src/ft_float_two.c.i
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/src/ft_float_two.c.i
 .PHONY : src/ft_float_two.c.i
 
 src/ft_float_two.s: src/ft_float_two.c.s
@@ -2306,7 +2387,7 @@ src/ft_float_two.s: src/ft_float_two.c.s
 
 # target to generate assembly for a file
 src/ft_float_two.c.s:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/src/ft_float_two.c.s
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/src/ft_float_two.c.s
 .PHONY : src/ft_float_two.c.s
 
 src/ft_parse.obj: src/ft_parse.c.obj
@@ -2315,7 +2396,7 @@ src/ft_parse.obj: src/ft_parse.c.obj
 
 # target to build an object file
 src/ft_parse.c.obj:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/src/ft_parse.c.obj
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/src/ft_parse.c.obj
 .PHONY : src/ft_parse.c.obj
 
 src/ft_parse.i: src/ft_parse.c.i
@@ -2324,7 +2405,7 @@ src/ft_parse.i: src/ft_parse.c.i
 
 # target to preprocess a source file
 src/ft_parse.c.i:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/src/ft_parse.c.i
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/src/ft_parse.c.i
 .PHONY : src/ft_parse.c.i
 
 src/ft_parse.s: src/ft_parse.c.s
@@ -2333,7 +2414,7 @@ src/ft_parse.s: src/ft_parse.c.s
 
 # target to generate assembly for a file
 src/ft_parse.c.s:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/src/ft_parse.c.s
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/src/ft_parse.c.s
 .PHONY : src/ft_parse.c.s
 
 src/ft_printf.obj: src/ft_printf.c.obj
@@ -2342,7 +2423,7 @@ src/ft_printf.obj: src/ft_printf.c.obj
 
 # target to build an object file
 src/ft_printf.c.obj:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/src/ft_printf.c.obj
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/src/ft_printf.c.obj
 .PHONY : src/ft_printf.c.obj
 
 src/ft_printf.i: src/ft_printf.c.i
@@ -2351,7 +2432,7 @@ src/ft_printf.i: src/ft_printf.c.i
 
 # target to preprocess a source file
 src/ft_printf.c.i:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/src/ft_printf.c.i
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/src/ft_printf.c.i
 .PHONY : src/ft_printf.c.i
 
 src/ft_printf.s: src/ft_printf.c.s
@@ -2360,7 +2441,7 @@ src/ft_printf.s: src/ft_printf.c.s
 
 # target to generate assembly for a file
 src/ft_printf.c.s:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/src/ft_printf.c.s
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/src/ft_printf.c.s
 .PHONY : src/ft_printf.c.s
 
 src/ft_printf_add.obj: src/ft_printf_add.c.obj
@@ -2369,7 +2450,7 @@ src/ft_printf_add.obj: src/ft_printf_add.c.obj
 
 # target to build an object file
 src/ft_printf_add.c.obj:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/src/ft_printf_add.c.obj
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/src/ft_printf_add.c.obj
 .PHONY : src/ft_printf_add.c.obj
 
 src/ft_printf_add.i: src/ft_printf_add.c.i
@@ -2378,7 +2459,7 @@ src/ft_printf_add.i: src/ft_printf_add.c.i
 
 # target to preprocess a source file
 src/ft_printf_add.c.i:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/src/ft_printf_add.c.i
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/src/ft_printf_add.c.i
 .PHONY : src/ft_printf_add.c.i
 
 src/ft_printf_add.s: src/ft_printf_add.c.s
@@ -2387,7 +2468,7 @@ src/ft_printf_add.s: src/ft_printf_add.c.s
 
 # target to generate assembly for a file
 src/ft_printf_add.c.s:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/src/ft_printf_add.c.s
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/src/ft_printf_add.c.s
 .PHONY : src/ft_printf_add.c.s
 
 src/ft_putchar_fd_my.obj: src/ft_putchar_fd_my.c.obj
@@ -2396,7 +2477,7 @@ src/ft_putchar_fd_my.obj: src/ft_putchar_fd_my.c.obj
 
 # target to build an object file
 src/ft_putchar_fd_my.c.obj:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/src/ft_putchar_fd_my.c.obj
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/src/ft_putchar_fd_my.c.obj
 .PHONY : src/ft_putchar_fd_my.c.obj
 
 src/ft_putchar_fd_my.i: src/ft_putchar_fd_my.c.i
@@ -2405,7 +2486,7 @@ src/ft_putchar_fd_my.i: src/ft_putchar_fd_my.c.i
 
 # target to preprocess a source file
 src/ft_putchar_fd_my.c.i:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/src/ft_putchar_fd_my.c.i
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/src/ft_putchar_fd_my.c.i
 .PHONY : src/ft_putchar_fd_my.c.i
 
 src/ft_putchar_fd_my.s: src/ft_putchar_fd_my.c.s
@@ -2414,7 +2495,7 @@ src/ft_putchar_fd_my.s: src/ft_putchar_fd_my.c.s
 
 # target to generate assembly for a file
 src/ft_putchar_fd_my.c.s:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/src/ft_putchar_fd_my.c.s
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/src/ft_putchar_fd_my.c.s
 .PHONY : src/ft_putchar_fd_my.c.s
 
 src/ft_putnbr_my.obj: src/ft_putnbr_my.c.obj
@@ -2423,7 +2504,7 @@ src/ft_putnbr_my.obj: src/ft_putnbr_my.c.obj
 
 # target to build an object file
 src/ft_putnbr_my.c.obj:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/src/ft_putnbr_my.c.obj
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/src/ft_putnbr_my.c.obj
 .PHONY : src/ft_putnbr_my.c.obj
 
 src/ft_putnbr_my.i: src/ft_putnbr_my.c.i
@@ -2432,7 +2513,7 @@ src/ft_putnbr_my.i: src/ft_putnbr_my.c.i
 
 # target to preprocess a source file
 src/ft_putnbr_my.c.i:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/src/ft_putnbr_my.c.i
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/src/ft_putnbr_my.c.i
 .PHONY : src/ft_putnbr_my.c.i
 
 src/ft_putnbr_my.s: src/ft_putnbr_my.c.s
@@ -2441,7 +2522,7 @@ src/ft_putnbr_my.s: src/ft_putnbr_my.c.s
 
 # target to generate assembly for a file
 src/ft_putnbr_my.c.s:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/src/ft_putnbr_my.c.s
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/src/ft_putnbr_my.c.s
 .PHONY : src/ft_putnbr_my.c.s
 
 src/hex_oct.obj: src/hex_oct.c.obj
@@ -2450,7 +2531,7 @@ src/hex_oct.obj: src/hex_oct.c.obj
 
 # target to build an object file
 src/hex_oct.c.obj:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/src/hex_oct.c.obj
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/src/hex_oct.c.obj
 .PHONY : src/hex_oct.c.obj
 
 src/hex_oct.i: src/hex_oct.c.i
@@ -2459,7 +2540,7 @@ src/hex_oct.i: src/hex_oct.c.i
 
 # target to preprocess a source file
 src/hex_oct.c.i:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/src/hex_oct.c.i
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/src/hex_oct.c.i
 .PHONY : src/hex_oct.c.i
 
 src/hex_oct.s: src/hex_oct.c.s
@@ -2468,7 +2549,7 @@ src/hex_oct.s: src/hex_oct.c.s
 
 # target to generate assembly for a file
 src/hex_oct.c.s:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/src/hex_oct.c.s
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/src/hex_oct.c.s
 .PHONY : src/hex_oct.c.s
 
 src/print_oxp.obj: src/print_oxp.c.obj
@@ -2477,7 +2558,7 @@ src/print_oxp.obj: src/print_oxp.c.obj
 
 # target to build an object file
 src/print_oxp.c.obj:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/src/print_oxp.c.obj
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/src/print_oxp.c.obj
 .PHONY : src/print_oxp.c.obj
 
 src/print_oxp.i: src/print_oxp.c.i
@@ -2486,7 +2567,7 @@ src/print_oxp.i: src/print_oxp.c.i
 
 # target to preprocess a source file
 src/print_oxp.c.i:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/src/print_oxp.c.i
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/src/print_oxp.c.i
 .PHONY : src/print_oxp.c.i
 
 src/print_oxp.s: src/print_oxp.c.s
@@ -2495,7 +2576,7 @@ src/print_oxp.s: src/print_oxp.c.s
 
 # target to generate assembly for a file
 src/print_oxp.c.s:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/src/print_oxp.c.s
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/src/print_oxp.c.s
 .PHONY : src/print_oxp.c.s
 
 src/star_functions.obj: src/star_functions.c.obj
@@ -2504,7 +2585,7 @@ src/star_functions.obj: src/star_functions.c.obj
 
 # target to build an object file
 src/star_functions.c.obj:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/src/star_functions.c.obj
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/src/star_functions.c.obj
 .PHONY : src/star_functions.c.obj
 
 src/star_functions.i: src/star_functions.c.i
@@ -2513,7 +2594,7 @@ src/star_functions.i: src/star_functions.c.i
 
 # target to preprocess a source file
 src/star_functions.c.i:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/src/star_functions.c.i
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/src/star_functions.c.i
 .PHONY : src/star_functions.c.i
 
 src/star_functions.s: src/star_functions.c.s
@@ -2522,7 +2603,7 @@ src/star_functions.s: src/star_functions.c.s
 
 # target to generate assembly for a file
 src/star_functions.c.s:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/src/star_functions.c.s
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/src/star_functions.c.s
 .PHONY : src/star_functions.c.s
 
 src/time.obj: src/time.c.obj
@@ -2531,7 +2612,7 @@ src/time.obj: src/time.c.obj
 
 # target to build an object file
 src/time.c.obj:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/src/time.c.obj
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/src/time.c.obj
 .PHONY : src/time.c.obj
 
 src/time.i: src/time.c.i
@@ -2540,7 +2621,7 @@ src/time.i: src/time.c.i
 
 # target to preprocess a source file
 src/time.c.i:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/src/time.c.i
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/src/time.c.i
 .PHONY : src/time.c.i
 
 src/time.s: src/time.c.s
@@ -2549,8 +2630,35 @@ src/time.s: src/time.c.s
 
 # target to generate assembly for a file
 src/time.c.s:
-	$(MAKE) -f CMakeFiles\my_prinf.dir\build.make CMakeFiles/my_prinf.dir/src/time.c.s
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/src/time.c.s
 .PHONY : src/time.c.s
+
+usual_funcs.obj: usual_funcs.c.obj
+
+.PHONY : usual_funcs.obj
+
+# target to build an object file
+usual_funcs.c.obj:
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/usual_funcs.c.obj
+.PHONY : usual_funcs.c.obj
+
+usual_funcs.i: usual_funcs.c.i
+
+.PHONY : usual_funcs.i
+
+# target to preprocess a source file
+usual_funcs.c.i:
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/usual_funcs.c.i
+.PHONY : usual_funcs.c.i
+
+usual_funcs.s: usual_funcs.c.s
+
+.PHONY : usual_funcs.s
+
+# target to generate assembly for a file
+usual_funcs.c.s:
+	$(MAKE) -f CMakeFiles\lemin_konichua.dir\build.make CMakeFiles/lemin_konichua.dir/usual_funcs.c.s
+.PHONY : usual_funcs.c.s
 
 # Help Target
 help:
@@ -2558,9 +2666,12 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
-	@echo ... my_prinf
+	@echo ... lemin_konichua
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... algorithm.obj
+	@echo ... algorithm.i
+	@echo ... algorithm.s
 	@echo ... libft/ft_atoi.obj
 	@echo ... libft/ft_atoi.i
 	@echo ... libft/ft_atoi.s
@@ -2747,6 +2858,12 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... nullify.obj
+	@echo ... nullify.i
+	@echo ... nullify.s
+	@echo ... parcing.obj
+	@echo ... parcing.i
+	@echo ... parcing.s
 	@echo ... src/binary.obj
 	@echo ... src/binary.i
 	@echo ... src/binary.s
@@ -2831,6 +2948,9 @@ help:
 	@echo ... src/time.obj
 	@echo ... src/time.i
 	@echo ... src/time.s
+	@echo ... usual_funcs.obj
+	@echo ... usual_funcs.i
+	@echo ... usual_funcs.s
 .PHONY : help
 
 
