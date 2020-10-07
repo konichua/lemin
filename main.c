@@ -50,7 +50,7 @@ int main(int argc, char **argv)
 
 	algorithm(&lemin);
 
-	ft_output_names(&lemin);
-	ft_output_matrix(&lemin);
+//	ft_output_names(&lemin);
+//	ft_output_matrix(&lemin);
 	return 0;
 }

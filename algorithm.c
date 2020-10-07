@@ -172,9 +172,31 @@ void 	bhandari(t_lemin **lemin)
 	remove_edjes(lemin);
 	ft_printf("ways after remove_edjes:\n");
 	output_ways(lemin);
+	make_matr_ants(lemin);
+}
+
+void	make_matr_ants(t_lemin **lemin)
+{
+	int i;
+	int j;
+
+	i = 0;
+	(*lemin)->matr_ants = (int **)malloc(sizeof(int *) * (*lemin)->n);
+	while (i < (*lemin)->n)
+	{
+		j = 0;
+		(*lemin)->matr_ants[i] = (int *)malloc(sizeof(int) * (*lemin)->n);
+		while (j < (*lemin)->n)
+		{
+			(*lemin)->matr_ants[i][j] = 0;
+			j++;
+		}
+		i++;
+	}
 }
 
 void 	algorithm(t_lemin **lemin)
 {
 	bhandari(lemin);
+	move_ants(lemin);
 }

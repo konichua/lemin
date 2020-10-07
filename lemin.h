@@ -20,6 +20,9 @@ typedef struct 			s_lemin
 	int *marked_graph; // метки вершин по алгоритму дейкстры. индекс элемента соответствует индексу вершины, значение элемента - значению метки
 	int **ways; // найденные пути
 	int **copy_matrix; // точная копия adj_matrix
+	int **matr_ants; // где двигаются муравьи
+	int *paths; // одномерный массив длин путей
+	int paths_amount; // количество путей
 }						t_lemin;
 
 
@@ -48,5 +51,7 @@ void 	delete_way(t_lemin **lemin);
 int		bellman_ford(t_lemin **lemin, int current, int i);
 void	fix_found_way(t_lemin **lemin, int current, int i);
 void 	copy_matrix(t_lemin **lemin);
+void	make_matr_ants(t_lemin **lemin);
+void 	move_ants(t_lemin **lemin);
 
 #endif
