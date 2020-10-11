@@ -9,17 +9,18 @@
 
 typedef struct 			s_lemin
 {
-	int ants;
-	char *start;
-	char *end;
-	int is_start;
+	int init_ants; // количество муравьев (2)
+	int ants; // количество муравьев
+	char *start; // название стартовой вершины
+	char *end; // название конечной вершины
+	int is_start; // нужно для коммента ##start
 	int is_end;
 	char **names; // названия вершин. по names можно однозначно присвоить индекс названию вершины
 	int **adj_matrix; // матрица смежностей. индексы [i][j] соответствуют индексам из names
 	int n; // размерность матрицы
 	int *marked_graph; // метки вершин по алгоритму дейкстры. индекс элемента соответствует индексу вершины, значение элемента - значению метки
 	int **ways; // найденные пути
-	int **copy_matrix; // точная копия adj_matrix
+	int **copy_matrix; // точная копия adj_matrix ИСПОЛЬЗОВАТЬ ЕГО
 	int **matr_ants; // где двигаются муравьи
 	int *paths; // одномерный массив длин путей
 	int paths_amount; // количество путей
@@ -53,5 +54,6 @@ void	fix_found_way(t_lemin **lemin, int current, int i);
 void 	copy_matrix(t_lemin **lemin);
 void	make_matr_ants(t_lemin **lemin);
 void 	move_ants(t_lemin **lemin);
+void	move_new_ant(t_lemin **lemin, int num_way, int ant);
 
 #endif

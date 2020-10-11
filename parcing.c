@@ -212,5 +212,6 @@ int		parse_map(t_lemin **lemin)
 	allocate_memory_ways(lemin);
 	nullify_ways(lemin);
 	copy_matrix(lemin);
+	(*lemin)->init_ants = (*lemin)->ants;
 	return check_struct(lemin);
 }
