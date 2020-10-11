@@ -48,6 +48,7 @@ void ft_output_matrix(t_lemin **lemin);
 void 	del_loops(t_lemin **lemin);
 void	nullify_ways(t_lemin **lemin);
 void output_ways(t_lemin **lemin);
+void 	output_marked_graph(int *graph, int n);
 void 	delete_way(t_lemin **lemin);
 int		bellman_ford(t_lemin **lemin, int current, int i);
 void	fix_found_way(t_lemin **lemin, int current, int i);
@@ -55,5 +56,6 @@ void 	copy_matrix(t_lemin **lemin);
 void	make_matr_ants(t_lemin **lemin);
 void 	move_ants(t_lemin **lemin);
 void	move_new_ant(t_lemin **lemin, int num_way, int ant);
+void 	output_paths(t_lemin **lemin);
 
 #endif

@@ -99,20 +99,6 @@ void 	make_paths(t_lemin **lemin)
 	sort_paths(lemin);
 }
 
-void 	output_paths(t_lemin **lemin)
-{
-	int i;
-
-	i = 0;
-	ft_printf("paths:\n");
-	while (i < (*lemin)->paths_amount)
-	{
-		ft_printf("%d ", (*lemin)->paths[i]);
-		i++;
-	}
-	ft_printf("\n");
-}
-
 int		is_ant_moving(t_lemin **lemin, int num_way)
 {
 	int j;
@@ -137,8 +123,6 @@ void 	write_ant(int ant, char *room)
 	ft_printf("-");
 	ft_printf("%s", room);
 	ft_printf(" ");
-//	ft_printf("L%d-%s ", ant, room);
-//	ft_printf("?");
 }
 
 void	move_new_ant(t_lemin **lemin, int num_way, int ant)
@@ -184,6 +168,23 @@ int		find_running_ant(int ant, t_lemin **lemin)
 	return 0;
 }
 
+void 	go_ant2(int ant, int ind, t_lemin **lemin)
+{
+	int j;
+
+	j = 0;
+	while (j < (*lemin)->n)
+	{
+		if ((*lemin)->ways[j][ind] == 1)
+		{
+			(*lemin)->matr_ants[j][ind] = ant;
+			write_ant(ant, (*lemin)->names[j]);
+			break;
+		}
+		j++;
+	}
+}
+
 void 	go_ant(int ant, t_lemin **lemin)
 {
 	int i;
@@ -206,20 +207,10 @@ void 	go_ant(int ant, t_lemin **lemin)
 		}
 		i++;
 	}
-	j = 0;
 	if (find_index((*lemin)->names, (*lemin)->end) != ind) // муравей не на финише,
 		// если был на финише - его просто стерли (или переписали)
 	{
-		while (j < (*lemin)->n)
-		{
-			if ((*lemin)->ways[j][ind] == 1)
-			{
-				(*lemin)->matr_ants[j][ind] = ant;
-				write_ant(ant, (*lemin)->names[j]);
-				break;
-			}
-			j++;
-		}
+		go_ant2(ant, ind, lemin);
 	}
 }
 
