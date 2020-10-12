@@ -21,5 +21,6 @@ int main(int argc, char **argv)
 
 //	ft_output_names(&lemin);
 //	ft_output_matrix(&lemin);
+	free_struct(&lemin);
 	return 0;
 }
