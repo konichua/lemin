@@ -1,5 +1,5 @@
-cmake_minimum_required(VERSION 3.17)
-project(lemin C)
+cmake_minimum_required(VERSION 3.15)
+project(lemin_konichua C)
 
 set(CMAKE_C_STANDARD 11)
 
@@ -8,7 +8,7 @@ include_directories(includes)
 include_directories(libft)
 include_directories(src)
 
-add_executable(lemin
+add_executable(lemin_konichua
         includes/ft_printf.h
         libft/ft_atoi.c
         libft/ft_bzero.c

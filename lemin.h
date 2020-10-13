@@ -60,5 +60,8 @@ void	move_new_ant(t_lemin **lemin, int num_way, int ant);
 void 	output_paths(t_lemin **lemin);
 void	free_struct(t_lemin **lemin);
 void 	output_sorted_paths(t_lemin **lemin);
+int     find_min(t_lemin **lemin);
+int     find_max(t_lemin **lemin);
+
 
 #endif

@@ -126,6 +126,7 @@ int		is_ant_moving(t_lemin **lemin, int num_way)
 
 void 	write_ant(int ant, char *room)
 {
+//    ;
 	ft_printf("L");
 	ft_printf("%d", ant);
 	ft_printf("-");
@@ -193,7 +194,7 @@ void 	go_ant2(int ant, int ind, t_lemin **lemin)
 	}
 }
 
-void 	go_ant(int ant, t_lemin **lemin)
+int 	go_ant(int ant, t_lemin **lemin, int end_ant)
 {
 	int i;
 	int j;
@@ -215,44 +216,31 @@ void 	go_ant(int ant, t_lemin **lemin)
 		}
 		i++;
 	}
-	if (find_index((*lemin)->names, (*lemin)->end) != ind) // муравей не на финише,
+	if (ind > -1 && find_index((*lemin)->names, (*lemin)->end) != ind) // муравей не на финише,
 		// если был на финише - его просто стерли (или переписали)
 	{
 		go_ant2(ant, ind, lemin);
 	}
-}
-
-void	move_exst_ants(t_lemin **lemin)
-{
-	int i;
-
-	i = 1;
-	while (i <= (*lemin)->init_ants)
-	{
-		if (find_running_ant(i, lemin)) // если мы нашли конкретного бегущего муравья
-			go_ant(i, lemin);
-		i++;
-	}
-}
-
-int 	is_ant_on_map(t_lemin **lemin)
-{
-	int i;
-	int j;
-
-	i = 0;
-	while (i < (*lemin)->n)
-	{
-		j = 0;
-		while (j < (*lemin)->n)
-		{
-			if ((*lemin)->matr_ants[i][j] != 0)
-				return 1;
-			j++;
-		}
-		i++;
-	}
+	else if (ant == end_ant) // если он на финише и это последний муравей
+	    return 1;
 	return 0;
+}
+
+int 	move_exst_ants(t_lemin **lemin, int end_ant)
+{
+    int start;
+    int end;
+
+    if ((start = find_min(lemin)) == -1)
+        return 0;
+    end = find_max(lemin);
+	while (start <= end)
+	{
+        if (go_ant(start, lemin, end_ant))
+            return 0;
+        start++;
+	}
+	return 1;
 }
 
 int     find_unsorted_way(t_lemin **lemin, int way)
@@ -260,9 +248,11 @@ int     find_unsorted_way(t_lemin **lemin, int way)
 //    (*lemin)->paths[way] // chosen way
     int duplicate;
     int i;
+    int check_dup;
 
     duplicate = 0;
     i = 0;
+    check_dup = 0;
     while (i < way)
     {
         if ((*lemin)->paths[i] == (*lemin)->paths[way])
@@ -270,9 +260,13 @@ int     find_unsorted_way(t_lemin **lemin, int way)
         i++;
     }
     i = 0;
-    while ((*lemin)->paths[way] != (*lemin)->unsorted_paths[i])
+    while ((*lemin)->paths[way] != (*lemin)->unsorted_paths[i] || duplicate != check_dup)
+    {
+        if ((*lemin)->paths[way] == (*lemin)->unsorted_paths[i])
+            check_dup++;
         i++;
-    return (i + duplicate);
+    }
+    return (i);
 }
 
 void 	move_ants(t_lemin **lemin)
@@ -292,17 +286,15 @@ void 	move_ants(t_lemin **lemin)
     // this loop will continue untill all new ants move
     while ((*lemin)->ants > 0)//(i < (*lemin)->paths_amount && (*lemin)->ants > 0)
     {
-        move_exst_ants(lemin);
+        move_exst_ants(lemin, (*lemin)->init_ants);
         i = 0;
-        while (i < (*lemin)->paths_amount && (*lemin)->ants > 0)  // YES
+
+        // решаем пускать муравья по данному пути или нет
+        while (i < (*lemin)->paths_amount && (*lemin)->ants > 0 && is_ant_moving(lemin, i))  // YES
         {
-            // решаем пускать муравья по данному пути или нет
-            if (is_ant_moving(lemin, i))
-            {
-                move_new_ant(lemin, find_unsorted_way(lemin, i), ant); // пустить НОВОГО муравья по конкретному пути
-                (*lemin)->ants--;
-                ant++;
-            }
+            move_new_ant(lemin, find_unsorted_way(lemin, i), ant); // пустить НОВОГО муравья по конкретному пути
+            (*lemin)->ants--;
+            ant++;
             i++;
         }
         ft_printf("\n");
@@ -310,9 +302,11 @@ void 	move_ants(t_lemin **lemin)
 
 
 
-	while (is_ant_on_map(lemin)) // пока муравьи есть на карте
-	{
-		move_exst_ants(lemin);
+//	while (is_ant_on_map(lemin)) // пока муравьи есть на карте
+//	{
+	while (move_exst_ants(lemin, (*lemin)->init_ants))
+    {
+	    ft_printf("ENDING PART");
 		ft_printf("\n");
 	}
 
