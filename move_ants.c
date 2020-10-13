@@ -54,6 +54,13 @@ void 	sort_paths(t_lemin **lemin)
 	int j;
 
 	flag = 1;
+	i = 0;
+	while (i < (*lemin)->paths_amount)
+    {
+        (*lemin)->unsorted_paths[i] = (*lemin)->paths[i];
+        i++;
+    }
+
 	while (flag)
 	{
 		flag = 0;
@@ -78,6 +85,7 @@ void 	make_paths(t_lemin **lemin)
 {
 	(*lemin)->paths_amount = count_paths2(lemin);
 	(*lemin)->paths = (int *)malloc(sizeof(int) * (*lemin)->paths_amount);
+    (*lemin)->unsorted_paths = (int *)malloc(sizeof(int) * (*lemin)->paths_amount);
 	int start = find_index((*lemin)->names, (*lemin)->start);
 	int path_ind;
 
@@ -247,6 +255,26 @@ int 	is_ant_on_map(t_lemin **lemin)
 	return 0;
 }
 
+int     find_unsorted_way(t_lemin **lemin, int way)
+{
+//    (*lemin)->paths[way] // chosen way
+    int duplicate;
+    int i;
+
+    duplicate = 0;
+    i = 0;
+    while (i < way)
+    {
+        if ((*lemin)->paths[i] == (*lemin)->paths[way])
+            duplicate++;
+        i++;
+    }
+    i = 0;
+    while ((*lemin)->paths[way] != (*lemin)->unsorted_paths[i])
+        i++;
+    return (i + duplicate);
+}
+
 void 	move_ants(t_lemin **lemin)
 {
 	int i; // отвечает за текущий номер пути
@@ -258,6 +286,7 @@ void 	move_ants(t_lemin **lemin)
 	ft_printf("amount of paths: %d\n", (*lemin)->paths_amount);
 	ft_printf("amount of ants: %d\n", (*lemin)->ants);
 	output_paths(lemin);
+    output_sorted_paths(lemin);
 
 
     // this loop will continue untill all new ants move
@@ -270,7 +299,7 @@ void 	move_ants(t_lemin **lemin)
             // решаем пускать муравья по данному пути или нет
             if (is_ant_moving(lemin, i))
             {
-                move_new_ant(lemin, i, ant); // пустить НОВОГО муравья по конкретному пути
+                move_new_ant(lemin, find_unsorted_way(lemin, i), ant); // пустить НОВОГО муравья по конкретному пути
                 (*lemin)->ants--;
                 ant++;
             }

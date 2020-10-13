@@ -9,13 +9,27 @@ void 	output_paths(t_lemin **lemin)
 	int i;
 
 	i = 0;
-	ft_printf("paths:\n");
+	ft_printf("paths: ");
 	while (i < (*lemin)->paths_amount)
 	{
 		ft_printf("%d ", (*lemin)->paths[i]);
 		i++;
 	}
 	ft_printf("\n");
+}
+
+void 	output_sorted_paths(t_lemin **lemin)
+{
+    int i;
+
+    i = 0;
+    ft_printf("unsorted_paths:\n");
+    while (i < (*lemin)->paths_amount)
+    {
+        ft_printf("%d ", (*lemin)->unsorted_paths[i]);
+        i++;
+    }
+    ft_printf("\n");
 }
 
 void ft_output_names(t_lemin **lemin)

@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/mburnett/Projects/lemin/includes/ft_printf.h
+stdarg.h
+-
+stdlib.h
+-
+unistd.h
+-
+../libft/libft.h
+/Users/mburnett/Projects/lemin/libft/libft.h
+
+/Users/mburnett/Projects/lemin/lemin.h
+libft/libft.h
+/Users/mburnett/Projects/lemin/libft/libft.h
+includes/ft_printf.h
+/Users/mburnett/Projects/lemin/includes/ft_printf.h
+
+/Users/mburnett/Projects/lemin/libft/libft.h
+string.h
+-
+unistd.h
+-
+stdlib.h
+-
+fcntl.h
+/Users/mburnett/Projects/lemin/libft/fcntl.h
+sys/types.h
+/Users/mburnett/Projects/lemin/libft/sys/types.h
+
+/Users/mburnett/Projects/lemin/parcing.c
+lemin.h
+/Users/mburnett/Projects/lemin/lemin.h
+

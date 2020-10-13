@@ -23,6 +23,7 @@ typedef struct 			s_lemin
 	int **copy_matrix; // точная копия adj_matrix ИСПОЛЬЗОВАТЬ ЕГО
 	int **matr_ants; // где двигаются муравьи
 	int *paths; // одномерный массив длин путей
+	int *unsorted_paths; // одномерный unsorted массив длин путей
 	int paths_amount; // количество путей
 }						t_lemin;
 
@@ -58,5 +59,6 @@ void 	move_ants(t_lemin **lemin);
 void	move_new_ant(t_lemin **lemin, int num_way, int ant);
 void 	output_paths(t_lemin **lemin);
 void	free_struct(t_lemin **lemin);
+void 	output_sorted_paths(t_lemin **lemin);
 
 #endif
