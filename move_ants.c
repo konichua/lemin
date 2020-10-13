@@ -258,33 +258,33 @@ void 	move_ants(t_lemin **lemin)
 	ft_printf("amount of paths: %d\n", (*lemin)->paths_amount);
 	ft_printf("amount of ants: %d\n", (*lemin)->ants);
 	output_paths(lemin);
-	// в каждой итерации решаем пускать муравья по данному пути или нет
-	while ((*lemin)->ants > 0)
-	{
-//		ft_printf("loh");
-		i = 0;
-//		while (i < (*lemin)->paths_amount && (*lemin)->ants > 0)
-//		{
-//			ft_printf("got");
-			move_exst_ants(lemin);
-			while (is_ant_moving(lemin, i))  // YES
-			{
-//				ft_printf("YES");
 
-//				ft_printf("SEGA?");
-				move_new_ant(lemin, i, ant); // пустить НОВОГО муравья по конкретному пути
-//				ft_printf("HERE?");
-				(*lemin)->ants--;
-				ant++;
-				i++;
-			}
-			ft_printf("\n");
 
-//		}
-	}
+    // this loop will continue untill all new ants move
+    while ((*lemin)->ants > 0)//(i < (*lemin)->paths_amount && (*lemin)->ants > 0)
+    {
+        move_exst_ants(lemin);
+        i = 0;
+        while (i < (*lemin)->paths_amount && (*lemin)->ants > 0)  // YES
+        {
+            // решаем пускать муравья по данному пути или нет
+            if (is_ant_moving(lemin, i))
+            {
+                move_new_ant(lemin, i, ant); // пустить НОВОГО муравья по конкретному пути
+                (*lemin)->ants--;
+                ant++;
+            }
+            i++;
+        }
+        ft_printf("\n");
+    }
+
+
+
 	while (is_ant_on_map(lemin)) // пока муравьи есть на карте
 	{
 		move_exst_ants(lemin);
 		ft_printf("\n");
 	}
+
 }
