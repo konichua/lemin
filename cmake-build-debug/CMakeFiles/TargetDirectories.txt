@@ -1,3 +1,0 @@
-/home/agloin/school21/kate/lemin_konichua/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/agloin/school21/kate/lemin_konichua/cmake-build-debug/CMakeFiles/lemin_konichua.dir
-/home/agloin/school21/kate/lemin_konichua/cmake-build-debug/CMakeFiles/edit_cache.dir

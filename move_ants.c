@@ -21,31 +21,6 @@ int		count_paths2(t_lemin **lemin)
 	return counter;
 }
 
-int		len_way(t_lemin **lemin, int j)
-{
-	int i;
-	int end;
-	int counter;
-
-	counter = 1;
-	end = find_index((*lemin)->names, (*lemin)->end);
-	while (j != end)
-	{
-		counter++;
-		i = 0;
-		while (i < (*lemin)->n)
-		{
-			if ((*lemin)->ways[i][j] == 1)
-			{
-				j = i;
-				break;
-			}
-			i++;
-		}
-	}
-	return counter;
-}
-
 void 	sort_paths(t_lemin **lemin)
 {
 	int i;
@@ -81,6 +56,117 @@ void 	sort_paths(t_lemin **lemin)
 	}
 }
 
+void	fix_arr_way(t_lemin **lemin, int way, int n)
+{
+	int i;
+	int end;
+	int k;
+	int j;
+
+	j = n;
+	k = 0;
+	end = find_index((*lemin)->names, (*lemin)->end);
+
+	while (j != end)
+	{
+		i = 0;
+		while (i < (*lemin)->n)
+		{
+			if ((*lemin)->ways[i][j] == 1)
+			{
+				j = i;
+				(*lemin)->paths_arr[way][k] = j;
+				k++;
+				break;
+			}
+			i++;
+		}
+	}
+}
+
+void 	memalloc_arr_paths(t_lemin **lemin)
+{
+	int i;
+
+	(*lemin)->paths_arr = (int **)malloc(sizeof(int *) * (*lemin)->paths_amount);
+	(*lemin)->ants_arr = (int **)malloc(sizeof(int *) * (*lemin)->paths_amount);
+	i = 0;
+	while (i < (*lemin)->paths_amount)
+	{
+		(*lemin)->paths_arr[i] = (int *)malloc(sizeof(int) * (*lemin)->paths[i]);
+		(*lemin)->ants_arr[i] = (int *)malloc(sizeof(int) * (*lemin)->paths[i]);
+		i++;
+	}
+}
+
+void	fill_arr_ants(t_lemin **lemin)
+{
+	int i;
+	int j;
+
+	i = 0;
+	while (i < (*lemin)->paths_amount)
+	{
+		j = 0;
+		while (j < (*lemin)->paths[i])
+		{
+			(*lemin)->ants_arr[i][j] = 0;
+			j++;
+		}
+		i++;
+	}
+}
+
+void 	make_arr_paths2(t_lemin **lemin, int cur_way)
+{
+	int j;
+	int n;
+
+	j = 0; // отвечает за вторую координату в paths_arr
+	int start = find_index((*lemin)->names, (*lemin)->start);
+	n = -1;
+	int count = 0;
+	// ищем конкретный путь
+	while (count <= find_unsorted_way(lemin, cur_way) && n < (*lemin)->n)
+	{
+		n++;
+		if ((*lemin)->ways[n][start] == 1)
+			count++;
+	}
+	if (n == -1)
+		n = 0;
+
+	while (j < (*lemin)->paths[cur_way])
+	{
+		while (n < (*lemin)->n)
+		{
+			if ((*lemin)->ways[n][start] == 1)
+			{
+				(*lemin)->paths_arr[cur_way][j] = n;
+				start = n;
+				break;
+			}
+			n++;
+		}
+		n = 0;
+		j++;
+	}
+}
+
+void	make_arr_paths(t_lemin **lemin)
+{
+	int i;
+
+	i = 0;
+	memalloc_arr_paths(lemin);
+	fill_arr_ants(lemin);
+	while (i < (*lemin)->paths_amount)
+	{
+		make_arr_paths2(lemin, i);
+		i++;
+	}
+}
+
 void 	make_paths(t_lemin **lemin)
 {
 	(*lemin)->paths_amount = count_paths2(lemin);
@@ -105,6 +191,7 @@ void 	make_paths(t_lemin **lemin)
 		}
 	}
 	sort_paths(lemin);
+	make_arr_paths(lemin);
 }
 
 int		is_ant_moving(t_lemin **lemin, int num_way)
@@ -126,7 +213,6 @@ int		is_ant_moving(t_lemin **lemin, int num_way)
 
 void 	write_ant(int ant, char *room)
 {
-//    ;
 	ft_printf("L");
 	ft_printf("%d", ant);
 	ft_printf("-");
@@ -136,110 +222,39 @@ void 	write_ant(int ant, char *room)
 
 void	move_new_ant(t_lemin **lemin, int num_way, int ant)
 {
-	int way;
-	int j;
-
-	way = -1;
-	j = 0;
-	while (way != num_way && j < (*lemin)->n)
-	{
-//		ft_printf("What");
-		if ((*lemin)->ways[j][find_index((*lemin)->names, (*lemin)->start)] == 1)
-			way++;
-		j++;
-//		ft_printf("IsThis");
-	}
-//	ft_printf("lol");
-	j--;
-	(*lemin)->matr_ants[j][find_index((*lemin)->names, (*lemin)->start)] = ant;
-//	ft_printf("kek");
-	write_ant(ant, (*lemin)->names[j]);
-//	ft_printf("cheburek");
+	(*lemin)->ants_arr[num_way][0] = ant;
+	write_ant(ant, (*lemin)->names[(*lemin)->paths_arr[num_way][0]]);
 }
 
-int		find_running_ant(int ant, t_lemin **lemin)
+int 	move_exst_ants(t_lemin **lemin, int end_ant) // возвращает 0 когда муравьи закончились
 {
 	int i;
 	int j;
+	int flag;
 
 	i = 0;
-	while (i < (*lemin)->n)
+	flag = 0;
+	while (i < (*lemin)->paths_amount)
 	{
-		j = 0;
-		while (j < (*lemin)->n)
+		j = (*lemin)->paths[i] - 1;
+		while (j > -1)
 		{
-			if ((*lemin)->matr_ants[i][j] == ant)
-				return 1;
-			j++;
-		}
-		i++;
-	}
-	return 0;
-}
-
-void 	go_ant2(int ant, int ind, t_lemin **lemin)
-{
-	int j;
-
-	j = 0;
-	while (j < (*lemin)->n)
-	{
-		if ((*lemin)->ways[j][ind] == 1)
-		{
-			(*lemin)->matr_ants[j][ind] = ant;
-			write_ant(ant, (*lemin)->names[j]);
-			break;
-		}
-		j++;
-	}
-}
-
-int 	go_ant(int ant, t_lemin **lemin, int end_ant)
-{
-	int i;
-	int j;
-	int ind;
-
-	i = 0;
-	ind = -1;
-	while (i < (*lemin)->n)
-	{
-		j = 0;
-		while (j < (*lemin)->n)
-		{
-			if ((*lemin)->matr_ants[i][j] == ant) // стираем муравья отсюда
+			if ((*lemin)->ants_arr[i][j] != 0)
 			{
-				(*lemin)->matr_ants[i][j] = 0;
-				ind = i;
+				if (j + 1 < (*lemin)->paths[i])
+				{
+					(*lemin)->ants_arr[i][j + 1] = (*lemin)->ants_arr[i][j];
+					write_ant((*lemin)->ants_arr[i][j + 1], (*lemin)->names[(*lemin)->paths_arr[i][j + 1]]);
+				}
+				(*lemin)->ants_arr[i][j] = 0;
+				flag = 1;
 			}
-			j++;
+			j--;
 		}
 		i++;
 	}
-	if (ind > -1 && find_index((*lemin)->names, (*lemin)->end) != ind) // муравей не на финише,
-		// если был на финише - его просто стерли (или переписали)
-	{
-		go_ant2(ant, ind, lemin);
-	}
-	else if (ant == end_ant) // если он на финише и это последний муравей
-	    return 1;
-	return 0;
-}
-
-int 	move_exst_ants(t_lemin **lemin, int end_ant)
-{
-    int start;
-    int end;
-
-    if ((start = find_min(lemin)) == -1)
-        return 0;
-    end = find_max(lemin);
-	while (start <= end)
-	{
-        if (go_ant(start, lemin, end_ant))
-            return 0;
-        start++;
-	}
+	if (flag == 0)
+		return 0;
 	return 1;
 }
 
@@ -277,13 +292,21 @@ void 	move_ants(t_lemin **lemin)
 	ant = 1;
 	// выделяем память под пути и записываем длину каждого пути + сортируем
 	make_paths(lemin);
-	ft_printf("amount of paths: %d\n", (*lemin)->paths_amount);
-	ft_printf("amount of ants: %d\n", (*lemin)->ants);
-	output_paths(lemin);
-    output_sorted_paths(lemin);
+//	output_sorted_paths(lemin);
+//	output_paths(lemin);
+//	output_path_arr(lemin);
+//	output_ants_arr(lemin);
+//	output_ways(lemin);
+//	exit(/0);
+//
+//	ft_printf("amount of paths: %d\n", (*lemin)->paths_amount);
+//	ft_printf("amount of ants: %d\n", (*lemin)->ants);
+//	output_paths(lemin);
+//    output_sorted_paths(lemin);
 
 
-    // this loop will continue untill all new ants move
+    // this loop will continue untill all new ants
+    // move
     while ((*lemin)->ants > 0)//(i < (*lemin)->paths_amount && (*lemin)->ants > 0)
     {
         move_exst_ants(lemin, (*lemin)->init_ants);
@@ -292,7 +315,8 @@ void 	move_ants(t_lemin **lemin)
         // решаем пускать муравья по данному пути или нет
         while (i < (*lemin)->paths_amount && (*lemin)->ants > 0 && is_ant_moving(lemin, i))  // YES
         {
-            move_new_ant(lemin, find_unsorted_way(lemin, i), ant); // пустить НОВОГО муравья по конкретному пути
+//        	ft_printf("next move new ant, i = %d\n", i);
+            move_new_ant(lemin, i, ant); // пустить НОВОГО муравья по конкретному пути
             (*lemin)->ants--;
             ant++;
             i++;
@@ -300,13 +324,10 @@ void 	move_ants(t_lemin **lemin)
         ft_printf("\n");
     }
 
-
-
-//	while (is_ant_on_map(lemin)) // пока муравьи есть на карте
-//	{
+//    output_ants_arr(lemin);
 	while (move_exst_ants(lemin, (*lemin)->init_ants))
     {
-	    ft_printf("ENDING PART");
+//	    ft_printf("ENDING PART");
 		ft_printf("\n");
 	}
 

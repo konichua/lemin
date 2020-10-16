@@ -9,7 +9,7 @@ void 	output_paths(t_lemin **lemin)
 	int i;
 
 	i = 0;
-	ft_printf("paths: ");
+	ft_printf("paths: \n");
 	while (i < (*lemin)->paths_amount)
 	{
 		ft_printf("%d ", (*lemin)->paths[i]);
@@ -91,4 +91,44 @@ void 	output_marked_graph(int *graph, int n)
 		i++;
 	}
 	ft_printf("\n");
+}
+
+void 	output_path_arr(t_lemin **lemin)
+{
+	int i;
+	int j;
+
+	i = 0;
+	ft_printf("paths_arr: \n");
+	while (i < (*lemin)->paths_amount)
+	{
+		j = 0;
+		while (j < (*lemin)->paths[i])
+		{
+			ft_printf("%d ", (*lemin)->paths_arr[i][j]);
+			j++;
+		}
+		ft_printf("\n");
+		i++;
+	}
+}
+
+void 	output_ants_arr(t_lemin **lemin)
+{
+	int i;
+	int j;
+
+	i = 0;
+	ft_printf("ants_arr: \n");
+	while (i < (*lemin)->paths_amount)
+	{
+		j = 0;
+		while (j < (*lemin)->paths[i])
+		{
+			ft_printf("%d ", (*lemin)->ants_arr[i][j]);
+			j++;
+		}
+		ft_printf("\n");
+		i++;
+	}
 }

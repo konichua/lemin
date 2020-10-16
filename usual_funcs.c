@@ -3,6 +3,31 @@
 //
 #include "lemin.h"
 
+int		len_way(t_lemin **lemin, int j)
+{
+	int i;
+	int end;
+	int counter;
+
+	counter = 1;
+	end = find_index((*lemin)->names, (*lemin)->end);
+	while (j != end)
+	{
+		counter++;
+		i = 0;
+		while (i < (*lemin)->n)
+		{
+			if ((*lemin)->ways[i][j] == 1)
+			{
+				j = i;
+				break;
+			}
+			i++;
+		}
+	}
+	return counter;
+}
+
 int len_arr(char **str)
 {
 	int i;

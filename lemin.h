@@ -25,6 +25,8 @@ typedef struct 			s_lemin
 	int *paths; // одномерный массив длин путей
 	int *unsorted_paths; // одномерный unsorted массив длин путей
 	int paths_amount; // количество путей
+	int **paths_arr; // массив путей с вершинами для отсортированной (paths)
+	int **ants_arr; // муравьи которые двигаются по paths_arr
 }						t_lemin;
 
 
@@ -62,6 +64,10 @@ void	free_struct(t_lemin **lemin);
 void 	output_sorted_paths(t_lemin **lemin);
 int     find_min(t_lemin **lemin);
 int     find_max(t_lemin **lemin);
-
+void 	output_path_arr(t_lemin **lemin);
+void 	output_ants_arr(t_lemin **lemin);
+int		len_way(t_lemin **lemin, int j);
+int     find_unsorted_way(t_lemin **lemin, int way);
+void 	write_ant(int ant, char *room);
 
 #endif

@@ -74,9 +74,15 @@ void 	allocate_memory_matrix(t_lemin **lemin)
 void 	set_comment(t_lemin **lemin, char **arr)
 {
 	if (ft_strcmp(arr[0], "##start") == 0)
+	{
 		(*lemin)->is_start = 1;
+		ft_printf("##start\n");
+	}
 	else if (ft_strcmp(arr[0], "##end") == 0)
+	{
 		(*lemin)->is_end = 1;
+		ft_printf("##end\n");
+	}
 }
 
 int 	fix_links(t_lemin **lemin, char **links)
@@ -162,6 +168,8 @@ int		parse_map(t_lemin **lemin)
 	nullify_struct(lemin);
 	while (get_next_line(0, &line) > 0)
 	{
+		if (line[0] != '#')
+			ft_printf("%s\n", line);
 		arr = ft_strsplit(line, ' ');
 		if (!arr)
 			return -1;
@@ -209,6 +217,7 @@ int		parse_map(t_lemin **lemin)
 			return -1;
 		}
 	}
+	ft_printf("\n");
 	del_loops(lemin);
 	allocate_memory_marked_graph(lemin);
 	allocate_memory_ways(lemin);
