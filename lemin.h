@@ -62,6 +62,7 @@ void	free_struct(t_lemin **lemin);
 void 	output_sorted_paths(t_lemin **lemin);
 int     find_min(t_lemin **lemin);
 int     find_max(t_lemin **lemin);
+void    save_map(char *line, int flag);
 
 
 #endif

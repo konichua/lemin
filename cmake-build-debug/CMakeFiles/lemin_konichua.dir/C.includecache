@@ -6,21 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/agloin/school21/kate/lemin_konichua/algorithm.c
+/Users/mburnett/Projects/lemin_konichua/buffer.c
 lemin.h
-/home/agloin/school21/kate/lemin_konichua/lemin.h
-stdio.h
--
+/Users/mburnett/Projects/lemin_konichua/lemin.h
 
-/home/agloin/school21/kate/lemin_konichua/free_struct.c
-lemin.h
-/home/agloin/school21/kate/lemin_konichua/lemin.h
-
-/home/agloin/school21/kate/lemin_konichua/help_output.c
-lemin.h
-/home/agloin/school21/kate/lemin_konichua/lemin.h
-
-/home/agloin/school21/kate/lemin_konichua/includes/ft_printf.h
+/Users/mburnett/Projects/lemin_konichua/includes/ft_printf.h
 stdarg.h
 -
 stdlib.h
@@ -28,15 +18,15 @@ stdlib.h
 unistd.h
 -
 ../libft/libft.h
-/home/agloin/school21/kate/lemin_konichua/libft/libft.h
+/Users/mburnett/Projects/lemin_konichua/libft/libft.h
 
-/home/agloin/school21/kate/lemin_konichua/lemin.h
+/Users/mburnett/Projects/lemin_konichua/lemin.h
 libft/libft.h
-/home/agloin/school21/kate/lemin_konichua/libft/libft.h
+/Users/mburnett/Projects/lemin_konichua/libft/libft.h
 includes/ft_printf.h
-/home/agloin/school21/kate/lemin_konichua/includes/ft_printf.h
+/Users/mburnett/Projects/lemin_konichua/includes/ft_printf.h
 
-/home/agloin/school21/kate/lemin_konichua/libft/libft.h
+/Users/mburnett/Projects/lemin_konichua/libft/libft.h
 string.h
 -
 unistd.h
@@ -44,27 +34,15 @@ unistd.h
 stdlib.h
 -
 fcntl.h
-/home/agloin/school21/kate/lemin_konichua/libft/fcntl.h
+/Users/mburnett/Projects/lemin_konichua/libft/fcntl.h
 sys/types.h
-/home/agloin/school21/kate/lemin_konichua/libft/sys/types.h
+/Users/mburnett/Projects/lemin_konichua/libft/sys/types.h
 
-/home/agloin/school21/kate/lemin_konichua/main.c
+/Users/mburnett/Projects/lemin_konichua/main.c
 lemin.h
-/home/agloin/school21/kate/lemin_konichua/lemin.h
+/Users/mburnett/Projects/lemin_konichua/lemin.h
 
-/home/agloin/school21/kate/lemin_konichua/move_ants.c
+/Users/mburnett/Projects/lemin_konichua/parcing.c
 lemin.h
-/home/agloin/school21/kate/lemin_konichua/lemin.h
-
-/home/agloin/school21/kate/lemin_konichua/nullify.c
-lemin.h
-/home/agloin/school21/kate/lemin_konichua/lemin.h
-
-/home/agloin/school21/kate/lemin_konichua/parcing.c
-lemin.h
-/home/agloin/school21/kate/lemin_konichua/lemin.h
-
-/home/agloin/school21/kate/lemin_konichua/usual_funcs.c
-lemin.h
-/home/agloin/school21/kate/lemin_konichua/lemin.h
+/Users/mburnett/Projects/lemin_konichua/lemin.h
 

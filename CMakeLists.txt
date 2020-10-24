@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.15)
+cmake_minimum_required(VERSION 3.17)
 project(lemin_konichua C)
 
 set(CMAKE_C_STANDARD 11)
@@ -6,7 +6,6 @@ set(CMAKE_C_STANDARD 11)
 include_directories(.)
 include_directories(includes)
 include_directories(libft)
-include_directories(src)
 
 add_executable(lemin_konichua
         includes/ft_printf.h
@@ -101,6 +100,7 @@ add_executable(lemin_konichua
         src/star_functions.c
         src/time.c
         algorithm.c
+        buffer.c
         free_struct.c
         help_output.c
         lemin.h

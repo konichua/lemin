@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/lemin_konichua.dir/algorithm.c.o"
+  "CMakeFiles/lemin_konichua.dir/buffer.c.o"
   "CMakeFiles/lemin_konichua.dir/free_struct.c.o"
   "CMakeFiles/lemin_konichua.dir/help_output.c.o"
   "CMakeFiles/lemin_konichua.dir/libft/ft_atoi.c.o"

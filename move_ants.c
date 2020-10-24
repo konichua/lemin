@@ -42,6 +42,7 @@ int		len_way(t_lemin **lemin, int j)
 			}
 			i++;
 		}
+//		ft_printf(" %d ", counter);
 	}
 	return counter;
 }
@@ -84,19 +85,23 @@ void 	sort_paths(t_lemin **lemin)
 void 	make_paths(t_lemin **lemin)
 {
 	(*lemin)->paths_amount = count_paths2(lemin);
+//    ft_printf("1");
 	(*lemin)->paths = (int *)malloc(sizeof(int) * (*lemin)->paths_amount);
     (*lemin)->unsorted_paths = (int *)malloc(sizeof(int) * (*lemin)->paths_amount);
 	int start = find_index((*lemin)->names, (*lemin)->start);
 	int path_ind;
+//    ft_printf("2");
 
-	path_ind = 0;
+
+    path_ind = 0;
 	int j = 0;
 	// записываем длины путей в массив
 	if ((*lemin)->paths_amount > 0)
 	{
 		while (j < (*lemin)->n)
 		{
-			if ((*lemin)->ways[j][start] == 1)
+//            ft_printf("3");
+            if ((*lemin)->ways[j][start] == 1)
 			{
 				(*lemin)->paths[path_ind] = len_way(lemin, j);
 				path_ind++;
@@ -104,6 +109,7 @@ void 	make_paths(t_lemin **lemin)
 			j++;
 		}
 	}
+//	ft_printf("make pafs");
 	sort_paths(lemin);
 }
 
@@ -275,8 +281,12 @@ void 	move_ants(t_lemin **lemin)
 	int ant; // муравей для output'a
 
 	ant = 1;
+
 	// выделяем память под пути и записываем длину каждого пути + сортируем
 	make_paths(lemin);
+
+
+	// DEBUG !!!!!!!!!!
 	ft_printf("amount of paths: %d\n", (*lemin)->paths_amount);
 	ft_printf("amount of ants: %d\n", (*lemin)->ants);
 	output_paths(lemin);
@@ -306,7 +316,7 @@ void 	move_ants(t_lemin **lemin)
 //	{
 	while (move_exst_ants(lemin, (*lemin)->init_ants))
     {
-	    ft_printf("ENDING PART");
+//	    ft_printf("ENDING PART");
 		ft_printf("\n");
 	}
 

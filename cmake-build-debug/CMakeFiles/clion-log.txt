@@ -1,11 +1,4 @@
-/home/agloin/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/193.6911.21/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/agloin/school21/kate/lemin_konichua
--- The C compiler identification is GNU 7.5.0
--- Check for working C compiler: /usr/bin/cc
--- Check for working C compiler: /usr/bin/cc -- works
--- Detecting C compiler ABI info
--- Detecting C compiler ABI info - done
--- Detecting C compile features
--- Detecting C compile features - done
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/mburnett/Projects/lemin_konichua
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/agloin/school21/kate/lemin_konichua/cmake-build-debug
+-- Build files have been written to: /Users/mburnett/Projects/lemin_konichua/cmake-build-debug

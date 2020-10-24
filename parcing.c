@@ -208,6 +208,7 @@ int		parse_map(t_lemin **lemin)
 			break;
 			return -1;
 		}
+		save_map(line, 0);
 	}
 	del_loops(lemin);
 	allocate_memory_marked_graph(lemin);
